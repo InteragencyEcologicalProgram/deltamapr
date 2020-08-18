@@ -24,4 +24,9 @@ WW_Delta
 \description{
 Shapefile of delta waterways
 }
+\section{Credit}{
+
+This shapefile was created by the California Department of Fish and Wildlife
+}
+
 \keyword{datasets}

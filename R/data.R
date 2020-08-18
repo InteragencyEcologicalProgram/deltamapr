@@ -14,4 +14,6 @@
 #'   \item{Shape_Area}{Shape_Area.}
 #'   \item{geometry}{Shapefile polygon coordinates.}
 #' }
+#' @section Credit:
+#' This shapefile was created by the California Department of Fish and Wildlife
 "WW_Delta"
