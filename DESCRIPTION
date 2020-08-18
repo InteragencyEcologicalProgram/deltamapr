@@ -1,0 +1,33 @@
+Package: deltamapr
+Title: Spatial Data for the Bay-Delta
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = c("Samuel", "M"),
+           family = "Bashevkin",
+           role = c("aut", "cre"),
+           email = "sam.bashevkin@deltacouncil.ca.gov",
+           comment = c(ORCID = "0000-0001-7406-7089")),
+      person(given = "Rosemary",
+           family = "Hartman",
+           role = c("aut"),
+           email = "Rosemary.Hartman@water.ca.gov",
+           comment = c(ORCID = "0000-0002-0642-183X")),
+      person(given = "Arthur",
+           family = "Barros",
+           role = c("aut"),
+           email = "Arthur.Barros@Wildlife.ca.gov"),
+      person(given = c("James", "A"),
+           family = "Hobbs",
+           role = c("aut"),
+           email = "James.Hobbs@wildlife.ca.gov",
+           comment = c(ORCID = "0000-0002-4052-9000")))
+Description: Data package of useful spatial data for the Bay-Delta.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    sf
+Depends: 
+    R (>= 2.10)
