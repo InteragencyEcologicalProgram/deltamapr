@@ -46,6 +46,15 @@ ggplot(WW_Delta)+
   theme_bw()
 ```
 
+### Full watershed waterways
+
+```{r}
+ggplot(WW_Watershed)+
+  geom_sf()+
+  theme_bw()
+```
+
+
 ### Delta regions
 
 ```{r}

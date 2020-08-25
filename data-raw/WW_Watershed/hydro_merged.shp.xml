@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Solano County Resource Management</origin>
+				<pubdate>REQUIRED: The date when the data set is published or otherwise made available for release.</pubdate>
+				<title Sync="TRUE">suisun_tidal_channels_jan2011</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink>\\SLTSERVER\Public Folder\Baseline Maps\NEW_GIS\GIS_County_Library\Parcels\Shapefiles\Zoning06.shp</onlink>
+				<ftname Sync="TRUE">suisun_tidal_channels_jan2011</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>All tidal channels and sloughs within Suisun Marsh Protection Plan Boundary as of 2010.</abstract>
+			<purpose>The purpose of this data is to have n updated version of tidal channels and sloughs within Suisun. </purpose>
+			<supplinf>Constructed by digitizing along channel edge boundaries as determined from orthrectified 2010 NAIP. 2010  NAIP was collected during low tide, unvegetated channel flats were included within channel digitization, assuming they will be inundated during higher tides.</supplinf>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>12-23-2010</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-122.135849</westbc>
+				<eastbc Sync="TRUE">-121.851372</eastbc>
+				<northbc Sync="TRUE">38.242930</northbc>
+				<southbc Sync="TRUE">38.050533</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">6522648.554951</leftbc><rightbc Sync="TRUE">6604355.246587</rightbc><bottombc Sync="TRUE">1780257.443423</bottombc><topbc Sync="TRUE">1850291.123245</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>REQUIRED: Reference to a formally registered thesaurus or a similar authoritative source of theme keywords.</themekt>
+				<themekey>ecogeomorphic</themekey>
+				<themekey>landscape</themekey>
+				<themekey>estuarine</themekey></theme>
+			<place>
+				<placekey>Rush Ranch</placekey>
+			</place>
+			<temporal>
+			</temporal>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>Channels were digitized at scale 1:6000. </useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Christina Toms</cntper>
+					<cntorg>Wetlands and Water Resources</cntorg>
+				</cntperp>
+				<cntpos>Ecological Engineer</cntpos>
+				<cntaddr>
+					<city>Fairfield</city>
+					<state>CA</state>
+				</cntaddr>
+				<cntvoice>415-457-0250</cntvoice>
+				<cntfax>415-457-0260</cntfax>
+				<cntemail>christina@swampthing.org</cntemail>
+				<hours>anytime</hours>
+				<cntinst>Please use email.</cntinst>
+			</cntinfo>
+		</ptcontac>
+		<datacred>Wetlands and Water Resources 2011</datacred>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<lineage>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>J:\Agencies\ResourceMgmt\Dev\EMMgmt\Zoning\Zoning_Designations.shp.xml</srcused>
+				<procdate>Unknown</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntorg>Resource Management, Solano County</cntorg>
+						</cntperp>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Eric Wilberg made some minor corrections</procdesc>
+				<procdate>2008.04.21</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Eric Wilberg</cntper>
+							<cntorg>Solano County Resource Management</cntorg>
+						</cntperp>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>K:\SRCD Watershed Assessment\Planning\zoning</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>C:\GIS\SLT_Data\Zoning\zoning</srcused>
+				<procdate>20081020</procdate>
+				<proctime>09592000</proctime>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>M:\SLT6\Zoning06</srcused>
+				<procdate>20081111</procdate>
+				<proctime>14151200</proctime>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>M:\SLT7\Zoning06</srcused>
+				<procdate>20081113</procdate>
+				<proctime>07182200</proctime>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>C:\Documents and Settings\Mark\Desktop\Feighner\Zoning06</srcused>
+				<procdate>20081212</procdate>
+				<proctime>09355300</proctime>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset moved.</procdesc>
+				<srcused>N:\NEW_GIS\GIS_County_Library\Parcels\Laurel_Ledgewood\Zoning06</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset moved.</procdesc>
+				<srcused>N:\NEW_GIS\GIS_County_Library\Parcels\Laurel_Ledgewood\Shapefiles\Zoning06</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>C:\DOCUME~1\Jessica\LOCALS~1\Temp\xml110.tmp</srcused>
+				<procdate>20090616</procdate>
+				<proctime>14485400</proctime>
+			</procstep>
+			<procstep>
+				<procdesc>Dataset copied.</procdesc>
+				<srcused>E:\GIS_Projects\1156_RushRanch\Data\FromSLT-2009\Property_boundaries\rush_ranch_editedtoNAIP</srcused>
+				<procdate>20101216</procdate>
+				<proctime>21471700</proctime>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\Documents and Settings\christina\Desktop\upland.xml</srcused><procdate Sync="TRUE">20110110</procdate><proctime Sync="TRUE">14290400</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE"></srcused><procdate Sync="TRUE">20110126</procdate><proctime Sync="TRUE">15515900</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset moved.</procdesc><srcused Sync="TRUE">D:\GIS\Projects\1151_TNC-SuisunImplStrat\data\WWR\shapes\suisun_tidal_channels_jan2011</srcused><procdate Sync="TRUE">20110126</procdate><proctime Sync="TRUE">15583700</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset moved.</procdesc><srcused Sync="TRUE">D:\GIS\Base_Data\Geography\Suisun_WWR\suisun_tidal_channels_jan2011</srcused><procdate Sync="TRUE">20110207</procdate><proctime Sync="TRUE">17381500</proctime></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf><esriterm Name="hydro_merged"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="4" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">439</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance Sync="TRUE">coordinate pair</plance>
+					<coordrep>
+						<absres Sync="TRUE">0.000000</absres>
+						<ordres Sync="TRUE">0.000000</ordres>
+					</coordrep>
+					<plandu Sync="TRUE">survey feet</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1983</horizdn>
+				<ellips Sync="TRUE">Geodetic Reference System 80</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><projcsn Sync="TRUE">NAD_1983_StatePlane_California_II_FIPS_0402_Feet</projcsn></cordsysn></horizsys>
+		<vertdef>
+			<altsys>
+				<altres>1.000000</altres>
+				<altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<detailed Name="hydro_merged">
+			<enttyp>
+				<enttypl Sync="TRUE">hydro_merged</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">439</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">Shape_Le_2</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Level_3</attrlabl><attalias Sync="TRUE">Level_3</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Level_4</attrlabl><attalias Sync="TRUE">Level_4</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Length of feature in internal units.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">OBJECTID</attrlabl><attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Shape_Area</attrlabl><attalias Sync="TRUE">Shape_Area</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">ET_ID</attrlabl><attalias Sync="TRUE">ET_ID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SHAPE</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Perimeter</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">Perimeter</attrlabl><attalias Sync="TRUE">Shape_Leng</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Shape_Leng</attrlabl><attalias Sync="TRUE">Acres</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Acres</attrlabl><attalias Sync="TRUE">AREA</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">AREA</attrlabl><attalias Sync="TRUE">DELTA_</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">DELTA_</attrlabl><attalias Sync="TRUE">DELTA_ID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">DELTA_ID</attrlabl><attalias Sync="TRUE">TYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">TYPE</attrlabl><attalias Sync="TRUE">HNAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">HNAME</attrlabl><attalias Sync="TRUE">TYPEAV</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">TYPEAV</attrlabl><attalias Sync="TRUE">ID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">ID</attrlabl><attalias Sync="TRUE">CLASS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">25</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">CLASS</attrlabl><attalias Sync="TRUE">NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">NAME</attrlabl><attalias Sync="TRUE">OBJECTID_1</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">OBJECTID_1</attrlabl><attalias Sync="TRUE">HYDRO24CA_</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">HYDRO24CA_</attrlabl><attalias Sync="TRUE">HYDRO24CA1</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">HYDRO24CA1</attrlabl><attalias Sync="TRUE">Comment_EW</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Comment_EW</attrlabl><attalias Sync="TRUE">SCALE</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">SCALE</attrlabl><attalias Sync="TRUE">Shape_Le_1</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Shape_Le_1</attrlabl><attalias Sync="TRUE">Notes</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Notes</attrlabl><attalias Sync="TRUE">EcoZone</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">EcoZone</attrlabl><attalias Sync="TRUE">Source</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">50</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Source</attrlabl><attalias Sync="TRUE">Shape_Le_2</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr></detailed>
+	</eainfo>
+	<distinfo>
+		<resdesc>Downloadable Data</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>0.729</transize>
+					<dssize Sync="TRUE">0.363</dssize></digtinfo>
+			</digform>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20110823</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Resource  Management, Solano County GIS</cntorg>
+					<cntper>gis staff</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>REQUIRED: The mailing and/or physical address for the organization or individual.</addrtype>
+					<city>REQUIRED: The city of the address.</city>
+					<state>REQUIRED: The state or province of the address.</state>
+					<postal>REQUIRED: The ZIP or other postal code of the address.</postal>
+				</cntaddr>
+				<cntvoice>707-784-6340.</cntvoice>
+				<cntemail>gisstaff@solanocounty.com</cntemail>
+				<hours>"	Hours of Service: Monday - Friday, 8:00 a.m. - 5:00 p.m. (Pacific Time)</hours>
+				<cntinst>Address  675 Texas Street, Suite 3700
+City  Fairfield
+State: California
+Postal Code: 94533-6339
+Country  USA</cntinst>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta></metainfo>
+	<Esri><CreaDate>20180404</CreaDate><CreaTime>10305000</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20200519</SyncDate><SyncTime>01211000</SyncTime><ModDate>20200519</ModDate><ModTime>01211000</ModTime><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\Merge" Date="20110126" Time="155232">Merge RushRanch_channels;suisun_channels_marsh D:\GIS\Projects\1151_TNC-SuisunImplStrat\data\WWR\shapes\suisun_tidal_channels_jan2011.shp "ID 'ID' true true false 8 Long 0 8 ,First,#,RushRanch_channels,ID,-1,-1,suisun_channels_marsh,Id,-1,-1;unit_major 'unit_major' true true false 50 Text 0 0 ,First,#,RushRanch_channels,unit_major,-1,-1;unit_minor 'unit_minor' true true false 50 Text 0 0 ,First,#,RushRanch_channels,unit_minor,-1,-1;area_ft2 'area_ft2' true true false 19 Double 0 0 ,First,#,RushRanch_channels,area_ft2,-1,-1;area_ac 'area_ac' true true false 19 Double 0 0 ,First,#,RushRanch_channels,area_ac,-1,-1;Perimeter 'Perimeter' true true false 19 Double 0 0 ,First,#,suisun_channels_marsh,Perimeter,-1,-1;Acres 'Acres' true true false 19 Double 0 0 ,First,#,suisun_channels_marsh,Acres,-1,-1;Level_3 'Level_3' true true false 50 Text 0 0 ,First,#,suisun_channels_marsh,Level_3,-1,-1;Level_4 'Level_4' true true false 50 Text 0 0 ,First,#,suisun_channels_marsh,Level_4,-1,-1;Level_5 'Level_5' true true false 50 Text 0 0 ,First,#,suisun_channels_marsh,Level_5,-1,-1;ET_ID 'ET_ID' true true false 9 Long 0 9 ,First,#,suisun_channels_marsh,ET_ID,-1,-1"</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CopyFeatures" Date="20140703" Time="095349">CopyFeatures "P:\proj_a_d\CA_DeltaCouncil\Phase1\data\CH2M\CH2M Transfer to GreenInfo 11222013\Data\DeltaPlan_GIS.gdb\Hydrology\WWR_suisun_tidal_channels_jan2011" P:\proj_a_d\CA_DeltaCouncil\Phase1\data\sourceCH2M_for_DeltaAtlas.gdb\Hydrology\WWR_suisun_tidal_channels_jan2011 # 0 0 0</Process></lineage><itemProps><itemLocation><linkage Sync="TRUE">file://\\CBDP-FILESERVER\ArcGIS\GIS_Data\Hydrology\Hydro_CH2MHill_Merged\hydro_merged.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation><itemName Sync="TRUE">hydro_merged</itemName><imsContentType Sync="TRUE">002</imsContentType><nativeExtBox><westBL Sync="TRUE">543059.245400</westBL><eastBL Sync="TRUE">699614.719500</eastBL><southBL Sync="TRUE">4128049.361200</southBL><northBL Sync="TRUE">4445230.938100</northBL><exTypeCode Sync="TRUE">1</exTypeCode></nativeExtBox><itemSize Sync="TRUE">3.879</itemSize></itemProps><coordRef><type Sync="TRUE">Projected</type><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits><projcsn Sync="TRUE">NAD_1983_UTM_Zone_10N</projcsn><peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.7'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_10N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-123.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26910]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26910&lt;/WKID&gt;&lt;LatestWKID&gt;26910&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef></DataProperties><ArcGISFormat>1.0</ArcGISFormat><ArcGISstyle>FGDC CSDGM Metadata</ArcGISstyle></Esri><dataIdInfo><envirDesc Sync="TRUE"> Version 6.2 (Build 9200) ; Esri ArcGIS 10.7.1.11595</envirDesc><dataLang><languageCode Sync="TRUE" value="eng"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">hydro_merged</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">6522648.554951</westBL><eastBL Sync="TRUE">6604355.246587</eastBL><northBL Sync="TRUE">1850291.123245</northBL><southBL Sync="TRUE">1780257.443423</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-122.135849</westBL><eastBL Sync="TRUE">-121.851372</eastBL><northBL Sync="TRUE">38.24293</northBL><southBL Sync="TRUE">38.050533</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox><dataExt><geoEle><GeoBndBox esriExtentType="search"><exTypeCode Sync="TRUE">1</exTypeCode><westBL Sync="TRUE">-122.514157</westBL><eastBL Sync="TRUE">-120.657022</eastBL><northBL Sync="TRUE">40.156329</northBL><southBL Sync="TRUE">37.277645</southBL></GeoBndBox></geoEle></dataExt></dataIdInfo><mdLang><languageCode Sync="TRUE" value="eng"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\usscr2fp001\Data\GIS\Projects\2010\10110054.05\Data\Source\WWR\Hydro_Files\Delta-Hydro-Files\suisun\tidal\suisun_tidal_channels_jan2011.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.363</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">3.879</transSize></distTranOps></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE" value="26910" code="26910">NAD_1983_StatePlane_California_II_FIPS_0402_Feet</identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">7.8.2(3.0.1)</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="hydro_merged"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">439</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20200519</mdDateSt></metadata>

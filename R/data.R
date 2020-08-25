@@ -32,3 +32,13 @@
 #' @section Credit:
 #' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
 "R_EDSM_Mahardja"
+
+#' Full watershed waterways
+#'
+#' Shapefile of waterways in the San Francisco Estuary and its watershed
+#'
+#' @format a sf tibble with 282 rows and 10 columns.
+#'
+#' @section Credit:
+#' This shapefile was created by CH2MHil and Wetland and Water Resource.
+"WW_Watershed"
