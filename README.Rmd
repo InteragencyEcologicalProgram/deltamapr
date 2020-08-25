@@ -30,10 +30,25 @@ You can install the development version from [GitHub](https://github.com/) with:
 devtools::install_github("InteragencyEcologicalProgram/deltamapr")
 ```
 
+## Usage
+
+This package contains data objects stored in [`sf`](https://r-spatial.github.io/sf/) format, which can be accessed with:
+```{r}
+require(sf) # To ensure `sf` objects print correctly
+deltamapr::WW_Delta
+```
+
+Or, after loading the package, like this:
+
+```{r}
+require(deltamapr)
+WW_Delta
+```
+
+
 ## Included data sets
 
 ```{r, message=FALSE}
-require(deltamapr)
 require(ggplot2)
 require(sf)
 ```
