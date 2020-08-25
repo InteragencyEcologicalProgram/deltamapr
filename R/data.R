@@ -1,4 +1,4 @@
-#' Delta shapefile
+#' Delta waterways
 #'
 #' Shapefile of delta waterways
 #'
@@ -17,3 +17,18 @@
 #' @section Credit:
 #' This shapefile was created by the California Department of Fish and Wildlife
 "WW_Delta"
+
+#' Bay-Delta regions
+#'
+#' EDSM regions modified by Brian Mahardja (USFWS)
+#'
+#' @format a sf tibble with 282 rows and 10 columns.
+#' \describe{
+#'   \item{Region}{Region}
+#'   \item{SubRegion}{SubRegion.}
+#'   \item{SQM}{Area of subregion in square miles.}
+#'   \item{geometry}{Shapefile polygon coordinates.}
+#' }
+#' @section Credit:
+#' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
+"R_EDSM_Mahardja"

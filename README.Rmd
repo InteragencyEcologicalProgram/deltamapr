@@ -33,10 +33,27 @@ devtools::install_github("InteragencyEcologicalProgram/deltamapr")
 ## Included data sets
 
 ```{r, message=FALSE}
+require(deltamapr)
 require(ggplot2)
 require(sf)
 ```
 
+### Delta waterways
+
+```{r}
+ggplot(WW_Delta)+
+  geom_sf()+
+  theme_bw()
+```
+
+### Delta regions
+
+```{r}
+ggplot(R_EDSM_Mahardja)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
 
 ### [California aquatic resources inventory](https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data#sthash.zuIpGDaQ.dpbs)
 

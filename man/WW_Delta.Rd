@@ -3,7 +3,7 @@
 \docType{data}
 \name{WW_Delta}
 \alias{WW_Delta}
-\title{Delta shapefile}
+\title{Delta waterways}
 \format{
 a sf tibble with 282 rows and 10 columns.
 \describe{
