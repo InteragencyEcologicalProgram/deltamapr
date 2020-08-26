@@ -1,5 +1,7 @@
 ---
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -81,16 +83,20 @@ ggplot(R_EDSM_Mahardja)+
 
 ### [California aquatic resources inventory](https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data#sthash.zuIpGDaQ.dpbs)
 
-#### CARI polygons
+#### CARI wetlands
 
-```r
-ggplot() +
-  geom_sf(data = SFE_CARI_polygons, aes(fill = leglabel1))
+```{r, fig.height=12}
+ggplot(H_CARI_wetlands) +
+  geom_sf(aes(fill = leglabellevel1))+
+  scale_fill_discrete(name="Wetland type", guide=guide_legend(ncol=1, title.position = "top", label.theme=element_text(size=8)))+
+  theme_bw()+
+  theme(legend.position = "bottom")
 ```
 
 #### CARI streams
 
-```r
-ggplot() +
-  geom_sf(data = SFE_CARI_streams)
+```{r}
+ggplot(H_CARI_streams) +
+  geom_sf()+
+  theme_bw()
 ```

@@ -5,7 +5,7 @@
 \alias{WW_Watershed}
 \title{Full watershed waterways}
 \format{
-a sf tibble with 282 rows and 10 columns.
+a sf tibble with 439 rows and 28 columns.
 }
 \usage{
 WW_Watershed
@@ -15,7 +15,7 @@ Shapefile of waterways in the San Francisco Estuary and its watershed
 }
 \section{Credit}{
 
-This shapefile was created by CH2MHil and Wetland and Water Resource.
+This shapefile includes data from CH2M Hill, and Wetland and Water Resources, CDFG Ecosystem Restoration Program as a part of ERP Stage 2 conservation strategy, and Dan Gillenwater.
 }
 
 \keyword{datasets}

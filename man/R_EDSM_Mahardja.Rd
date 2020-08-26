@@ -5,7 +5,7 @@
 \alias{R_EDSM_Mahardja}
 \title{Bay-Delta regions}
 \format{
-a sf tibble with 282 rows and 10 columns.
+a sf tibble with 41 rows and 4 columns.
 \describe{
 \item{Region}{Region}
 \item{SubRegion}{SubRegion.}

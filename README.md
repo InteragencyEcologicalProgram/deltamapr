@@ -122,16 +122,24 @@ ggplot(R_EDSM_Mahardja)+
 
 ### [California aquatic resources inventory](https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data#sthash.zuIpGDaQ.dpbs)
 
-#### CARI polygons
+#### CARI wetlands
 
 ``` r
-ggplot() +
-  geom_sf(data = SFE_CARI_polygons, aes(fill = leglabel1))
+ggplot(H_CARI_wetlands) +
+  geom_sf(aes(fill = leglabellevel1))+
+  scale_fill_discrete(name="Wetland type", guide=guide_legend(ncol=1, title.position = "top", label.theme=element_text(size=8)))+
+  theme_bw()+
+  theme(legend.position = "bottom")
 ```
+
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 #### CARI streams
 
 ``` r
-ggplot() +
-  geom_sf(data = SFE_CARI_streams)
+ggplot(H_CARI_streams) +
+  geom_sf()+
+  theme_bw()
 ```
+
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
