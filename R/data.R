@@ -29,9 +29,10 @@
 #'   \item{SQM}{Area of subregion in square miles.}
 #'   \item{geometry}{Shapefile polygon coordinates.}
 #' }
+#' @seealso \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}
 #' @section Credit:
 #' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
-"R_EDSM_Mahardja"
+"R_EDSM_Subregions_Mahardja"
 
 #' Full watershed waterways
 #'
@@ -111,3 +112,125 @@
 #' @section Credit:
 #' This dataset was created by the San Francisco Estuary Institute and is available (along with full metadata) \href{https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data}{here}.
 "H_CARI_streams"
+
+#' EDSM Regions
+#'
+#' Region polygons from the Enhanced Delta Smelt Monitoring Program
+#'
+#' @rdname R_EDSM_Regions
+#' @name R_EDSM_Regions
+#' @section Naming:
+#' Files are named with the year(s) then phase(s). So \code{R_EDSM_Regions_1617P1} refers to the 2016-2017 Phase 1 regions,
+#' while \code{R_EDSM_Regions_18P23} refers to the 2018 Phase 2 and Phase 3 regions.
+#' @section Duplication:
+#' Sometimes the same regions were used in multiple years. In this case, only the first year that set of regions appeared is made available and all years and phases that dataset
+#' applies to are listed below.
+#' \describe{
+#' \item{R_EDSM_Regions_1617P1}{Equivalent to 2017 Phases 2&3 Regions.}
+#' \item{R_EDSM_Regions_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Regions.}
+#' \item{R_EDSM_Regions_1819P1}{Equivalent to 2019-2020 Phase 1 Regions.}
+#' }
+#' @section Credit:
+#' These datasets were created by the United States Fish and Wildlife Service for the
+#' \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
+#' @seealso \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+NULL
+
+#' @rdname R_EDSM_Regions
+"R_EDSM_Regions_1617P1"
+
+#' @rdname R_EDSM_Regions
+"R_EDSM_Regions_1718P1"
+
+#' @rdname R_EDSM_Regions
+"R_EDSM_Regions_18P23"
+
+#' @rdname R_EDSM_Regions
+"R_EDSM_Regions_1819P1"
+
+#' @rdname R_EDSM_Regions
+"R_EDSM_Regions_19P3"
+
+#' EDSM Strata
+#'
+#' Strata polygons from the Enhanced Delta Smelt Monitoring Program
+#'
+#' @rdname R_EDSM_Strata
+#' @name R_EDSM_Strata
+#' @section Naming:
+#' Files are named with the year(s) then phase(s). So \code{R_EDSM_Strata_1617P1} refers to the 2016-2017 Phase 1 strata,
+#' while \code{R_EDSM_Strata_18P23} refers to the 2018 Phase 2 and Phase 3 strata.
+#' @section Duplication:
+#' Sometimes the same strata were used in multiple years. In this case, only the first year that set of strata appeared is made available and all years and phases that dataset
+#' applies to are listed below.
+#' \describe{
+#' \item{R_EDSM_Strata_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata.}
+#' \item{R_EDSM_Strata_1819P1}{Equivalent to 2019-2020 Phase 1 Strata.}
+#' }
+#' @section Credit:
+#' These datasets were created by the United States Fish and Wildlife Service for the
+#' \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
+#' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+NULL
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_1617P1"
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_17P2"
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_17P3"
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_1718P1"
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_18P23"
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_1819P1"
+
+#' @rdname R_EDSM_Strata
+"R_EDSM_Strata_19P3"
+
+#' EDSM Subregions
+#'
+#' Strata polygons from the Enhanced Delta Smelt Monitoring Program
+#'
+#' @rdname R_EDSM_Subregions
+#' @name R_EDSM_Subregions
+#' @section Naming:
+#' Files are named with the year(s) then phase(s). So \code{R_EDSM_Subregions_1617P1} refers to the 2016-2017 Phase 1 subregions,
+#' while \code{R_EDSM_Subregions_18P23} refers to the 2018 Phase 2 and Phase 3 subregions.
+#' @section Duplication:
+#' Sometimes the same subregions were used in multiple years. In this case, only the first year that set of subregions appeared is made available and all years and phases that dataset
+#' applies to are listed below.
+#' \describe{
+#' \item{R_EDSM_Subregions_1617P1}{Equivalent to 2017 Phase 3 Subregions}
+#' \item{R_EDSM_Subregions_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Subregions}
+#' \item{R_EDSM_Subregions_1819P1}{Equivalent to 2019-2020 Phase 1 Subregions}
+#' }
+#' @section Credit:
+#' These datasets were created by the United States Fish and Wildlife Service for the
+#' \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
+#' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+NULL
+
+#' @rdname R_EDSM_Subregions
+"R_EDSM_Subregions_1617P1"
+
+#' @rdname R_EDSM_Subregions
+"R_EDSM_Subregions_17P2"
+
+#' @rdname R_EDSM_Subregions
+"R_EDSM_Subregions_1718P1"
+
+#' @rdname R_EDSM_Subregions
+"R_EDSM_Subregions_18P23"
+
+#' @rdname R_EDSM_Subregions
+"R_EDSM_Subregions_1819P1"
+
+#' @rdname R_EDSM_Subregions
+"R_EDSM_Subregions_19P3"
