@@ -82,6 +82,17 @@ WW_Delta
 #> #   geometry <POLYGON [°]>
 ```
 
+## Data types
+
+Three spatial data types are included in this package
+
+1)  **Waterways**: Shapefiles of water coverage. These data files are
+    preceded by the prefix *WW*.
+2)  **Regions**: Shapefiles with sets of regions, subregions, or strata.
+    These data files are preceded by the prefix *R*.
+3)  **Habitat**: Shapefiles with habitat data. These data files are
+    preceded by the prefix *H*.
+
 ## Included data sets
 
 ``` r
@@ -112,7 +123,7 @@ ggplot(WW_Watershed)+
 ### Delta regions
 
 ``` r
-ggplot(R_EDSM_Mahardja)+
+ggplot(R_EDSM_Subregions_Mahardja)+
   geom_sf(aes(fill=SubRegion))+
   theme_bw()+
   theme(legend.position="none")

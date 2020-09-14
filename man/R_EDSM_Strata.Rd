@@ -66,6 +66,13 @@ These datasets were created by the United States Fish and Wildlife Service for t
 \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
 }
 
+\examples{
+library(leaflet)
+library(sf)
+leaflet()\%>\%
+addProviderTiles("Esri.WorldGrayCanvas")\%>\%
+addPolygons(data=st_transform(R_EDSM_Strata_1617P1, crs=4326))
+}
 \seealso{
 \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
 }
