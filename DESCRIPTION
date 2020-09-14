@@ -33,5 +33,4 @@ Depends:
     R (>= 2.10)
 Suggests: 
     ggplot2,
-    units,
-    leaflet
+    units
