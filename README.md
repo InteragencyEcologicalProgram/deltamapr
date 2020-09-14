@@ -1,7 +1,21 @@
+deltamapr
+================
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Data types](#data-types)
+  - [Waterways](#waterways)
+      - [Delta waterways](#delta-waterways)
+      - [Full watershed waterways](#full-watershed-waterways)
+  - [Regions](#regions)
+      - [Regions](#regions-1)
+      - [Strata](#strata)
+      - [Subregions](#subregions)
+  - [Habitat](#habitat)
+      - [California aquatic resources
+        inventory](#california-aquatic-resources-inventory)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# deltamapr
 
 <!-- badges: start -->
 
@@ -93,14 +107,16 @@ Three spatial data types are included in this package
 3)  **Habitat**: Shapefiles with habitat data. These data files are
     preceded by the prefix *H*.
 
-## Included data sets
+# Waterways
 
 ``` r
 require(ggplot2)
 require(sf)
 ```
 
-### Delta waterways
+## Delta waterways
+
+Produced by the California Department of Fish and Wildlife
 
 ``` r
 ggplot(WW_Delta)+
@@ -110,7 +126,11 @@ ggplot(WW_Delta)+
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
-### Full watershed waterways
+## Full watershed waterways
+
+This shapefile includes data from CH2M Hill, and Wetland and Water
+Resources, CDFG Ecosystem Restoration Program as a part of ERP Stage 2
+conservation strategy, and Dan Gillenwater.
 
 ``` r
 ggplot(WW_Watershed)+
@@ -120,7 +140,217 @@ ggplot(WW_Watershed)+
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
-### Delta regions
+# Regions
+
+All regions are derived from the united States Fish and Wildlife Service
+[Enhanced Delta Smelt Monitoring
+Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm).
+
+## Regions
+
+### EDSM 2016-17 Phase 1 Regions (Equivalent to 2017 Phases 2&3 Regions.)
+
+``` r
+ggplot(R_EDSM_Regions_1617P1)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
+### EDSM 2017-18 Phase 1 Regions
+
+``` r
+ggplot(R_EDSM_Regions_1718P1)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+
+### EDSM 2018 Phases 2-3 Regions (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Regions)
+
+``` r
+ggplot(R_EDSM_Regions_18P23)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+
+### EDSM 2018-19 Phase 1 Regions (Equivalent to 2019-2020 Phase 1 Regions)
+
+``` r
+ggplot(R_EDSM_Regions_1819P1)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+
+### EDSM 2019 Phase 3 Regions
+
+``` r
+ggplot(R_EDSM_Regions_19P3)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />
+
+## Strata
+
+### EDSM 2016-17 Phase 1 Strata
+
+``` r
+ggplot(R_EDSM_Strata_1617P1)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+
+### EDSM 2017 Phase 2 Strata
+
+``` r
+ggplot(R_EDSM_Strata_17P2)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
+
+### EDSM 2017 Phase 3 Strata
+
+``` r
+ggplot(R_EDSM_Strata_17P3)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-14-1.png" width="100%" />
+
+### EDSM 2017-18 Phase 1 Strata
+
+``` r
+ggplot(R_EDSM_Strata_1718P1)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-15-1.png" width="100%" />
+
+### EDSM 2018 Phases 2-3 Strata (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata)
+
+``` r
+ggplot(R_EDSM_Strata_18P23)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
+
+### EDSM 2018-19 Phase 1 Strata (Equivalent to 2019-2020 Phase 1 Strata)
+
+``` r
+ggplot(R_EDSM_Strata_1819P1)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-17-1.png" width="100%" />
+
+### EDSM 2019 Phase 3 Strata
+
+``` r
+ggplot(R_EDSM_Strata_19P3)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+<img src="man/figures/README-unnamed-chunk-18-1.png" width="100%" />
+
+## Subregions
+
+### EDSM 2016-17 Phase 1 Subregions (Equivalent to 2017 Phase 3 Subregions)
+
+``` r
+ggplot(R_EDSM_Subregions_1617P1)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-19-1.png" width="100%" />
+
+### EDSM 2017 Phase 2 Subregions
+
+``` r
+ggplot(R_EDSM_Subregions_17P2)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-20-1.png" width="100%" />
+
+### EDSM 2017-18 Phase 1 Subregions
+
+``` r
+ggplot(R_EDSM_Subregions_1718P1)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-21-1.png" width="100%" />
+
+### EDSM 2018 Phases 2-3 Subregions (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Subregions)
+
+``` r
+ggplot(R_EDSM_Subregions_18P23)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-22-1.png" width="100%" />
+
+### EDSM 2018-19 Phase 1 Subregions (Equivalent to 2019-2020 Phase 1 Subregions)
+
+``` r
+ggplot(R_EDSM_Subregions_1819P1)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-23-1.png" width="100%" />
+
+### EDSM 2019 Phase 3 Subregions
+
+``` r
+ggplot(R_EDSM_Subregions_19P3)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-24-1.png" width="100%" />
+
+### Brian Mahardja’s edited EDSM subregions
 
 ``` r
 ggplot(R_EDSM_Subregions_Mahardja)+
@@ -129,11 +359,17 @@ ggplot(R_EDSM_Subregions_Mahardja)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-25-1.png" width="100%" />
 
-### [California aquatic resources inventory](https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data#sthash.zuIpGDaQ.dpbs)
+# Habitat
 
-#### CARI wetlands
+## California aquatic resources inventory
+
+San Francisco Estuary Institute (SFEI). 2017. “California Aquatic
+Resource Inventory (CARI) version 0.3.” Accessed Aug 26, 2020.
+<http://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data>
+
+### CARI wetlands
 
 ``` r
 ggplot(H_CARI_wetlands) +
@@ -143,9 +379,9 @@ ggplot(H_CARI_wetlands) +
   theme(legend.position = "bottom")
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-26-1.png" width="100%" />
 
-#### CARI streams
+### CARI streams
 
 ``` r
 ggplot(H_CARI_streams) +
@@ -153,4 +389,4 @@ ggplot(H_CARI_streams) +
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-27-1.png" width="100%" />

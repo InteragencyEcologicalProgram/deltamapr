@@ -55,8 +55,8 @@ while \code{R_EDSM_Strata_18P23} refers to the 2018 Phase 2 and Phase 3 strata.
 Sometimes the same strata were used in multiple years. In this case, only the first year that set of strata appeared is made available and all years and phases that dataset
 applies to are listed below.
 \describe{
-\item{R_EDSM_Strata_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata.}
-\item{R_EDSM_Strata_1819P1}{Equivalent to 2019-2020 Phase 1 Strata.}
+\item{R_EDSM_Strata_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata}
+\item{R_EDSM_Strata_1819P1}{Equivalent to 2019-2020 Phase 1 Strata}
 }
 }
 

@@ -1,5 +1,9 @@
 ---
-output: github_document
+title: deltamapr
+output: 
+  github_document:
+    toc: true
+    toc_depth: 2
 editor_options: 
   chunk_output_type: console
 ---
@@ -15,7 +19,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-# deltamapr
 
 <!-- badges: start -->
 [![R build status](https://github.com/InteragencyEcologicalProgram/deltamapr/workflows/R-CMD-check/badge.svg)](https://github.com/InteragencyEcologicalProgram/deltamapr/actions)
@@ -55,14 +58,16 @@ Three spatial data types are included in this package
 2) **Regions**: Shapefiles with sets of regions, subregions, or strata. These data files are preceded by the prefix *R*.
 3) **Habitat**: Shapefiles with habitat data. These data files are preceded by the prefix *H*.
 
-## Included data sets
+# Waterways
 
 ```{r, message=FALSE}
 require(ggplot2)
 require(sf)
 ```
 
-### Delta waterways
+## Delta waterways
+
+Produced by the California Department of Fish and Wildlife
 
 ```{r}
 ggplot(WW_Delta)+
@@ -70,7 +75,9 @@ ggplot(WW_Delta)+
   theme_bw()
 ```
 
-### Full watershed waterways
+## Full watershed waterways
+
+This shapefile includes data from CH2M Hill, and Wetland and Water Resources, CDFG Ecosystem Restoration Program as a part of ERP Stage 2 conservation strategy, and Dan Gillenwater.
 
 ```{r}
 ggplot(WW_Watershed)+
@@ -78,8 +85,180 @@ ggplot(WW_Watershed)+
   theme_bw()
 ```
 
+# Regions
 
-### Delta regions
+All regions are derived from the united States Fish and Wildlife Service [Enhanced Delta Smelt Monitoring Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm).
+
+## Regions
+
+### EDSM 2016-17 Phase 1 Regions (Equivalent to 2017 Phases 2&3 Regions.)
+
+```{r}
+ggplot(R_EDSM_Regions_1617P1)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2017-18 Phase 1 Regions
+
+```{r}
+ggplot(R_EDSM_Regions_1718P1)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2018 Phases 2-3 Regions (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Regions)
+
+```{r}
+ggplot(R_EDSM_Regions_18P23)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2018-19 Phase 1 Regions (Equivalent to 2019-2020 Phase 1 Regions)
+
+```{r}
+ggplot(R_EDSM_Regions_1819P1)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2019 Phase 3 Regions
+
+```{r}
+ggplot(R_EDSM_Regions_19P3)+
+  geom_sf(aes(fill=Region))+
+  theme_bw()+
+  theme()
+```
+
+## Strata
+
+### EDSM 2016-17 Phase 1 Strata
+
+```{r}
+ggplot(R_EDSM_Strata_1617P1)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2017 Phase 2 Strata
+
+```{r}
+ggplot(R_EDSM_Strata_17P2)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2017 Phase 3 Strata
+
+```{r}
+ggplot(R_EDSM_Strata_17P3)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2017-18 Phase 1 Strata
+
+```{r}
+ggplot(R_EDSM_Strata_1718P1)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2018 Phases 2-3 Strata (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata)
+
+```{r}
+ggplot(R_EDSM_Strata_18P23)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2018-19 Phase 1 Strata (Equivalent to 2019-2020 Phase 1 Strata)
+
+```{r}
+ggplot(R_EDSM_Strata_1819P1)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+### EDSM 2019 Phase 3 Strata
+
+```{r}
+ggplot(R_EDSM_Strata_19P3)+
+  geom_sf(aes(fill=Stratum))+
+  theme_bw()+
+  theme()
+```
+
+
+## Subregions
+
+### EDSM 2016-17 Phase 1 Subregions (Equivalent to 2017 Phase 3 Subregions)
+
+```{r}
+ggplot(R_EDSM_Subregions_1617P1)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+### EDSM 2017 Phase 2 Subregions
+
+```{r}
+ggplot(R_EDSM_Subregions_17P2)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+### EDSM 2017-18 Phase 1 Subregions
+
+```{r}
+ggplot(R_EDSM_Subregions_1718P1)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+### EDSM 2018 Phases 2-3 Subregions (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Subregions)
+
+```{r}
+ggplot(R_EDSM_Subregions_18P23)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+### EDSM 2018-19 Phase 1 Subregions (Equivalent to 2019-2020 Phase 1 Subregions)
+
+```{r}
+ggplot(R_EDSM_Subregions_1819P1)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+### EDSM 2019 Phase 3 Subregions
+
+```{r}
+ggplot(R_EDSM_Subregions_19P3)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+### Brian Mahardja's edited EDSM subregions
 
 ```{r}
 ggplot(R_EDSM_Subregions_Mahardja)+
@@ -88,9 +267,13 @@ ggplot(R_EDSM_Subregions_Mahardja)+
   theme(legend.position="none")
 ```
 
-### [California aquatic resources inventory](https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data#sthash.zuIpGDaQ.dpbs)
+# Habitat
 
-#### CARI wetlands
+## California aquatic resources inventory
+
+San Francisco Estuary Institute (SFEI). 2017. "California Aquatic Resource Inventory (CARI) version 0.3." Accessed Aug 26, 2020. http://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data
+
+### CARI wetlands
 
 ```{r, fig.height=12}
 ggplot(H_CARI_wetlands) +
@@ -100,7 +283,7 @@ ggplot(H_CARI_wetlands) +
   theme(legend.position = "bottom")
 ```
 
-#### CARI streams
+### CARI streams
 
 ```{r}
 ggplot(H_CARI_streams) +

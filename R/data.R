@@ -126,9 +126,9 @@
 #' Sometimes the same regions were used in multiple years. In this case, only the first year that set of regions appeared is made available and all years and phases that dataset
 #' applies to are listed below.
 #' \describe{
-#' \item{R_EDSM_Regions_1617P1}{Equivalent to 2017 Phases 2&3 Regions.}
-#' \item{R_EDSM_Regions_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Regions.}
-#' \item{R_EDSM_Regions_1819P1}{Equivalent to 2019-2020 Phase 1 Regions.}
+#' \item{R_EDSM_Regions_1617P1}{Equivalent to 2017 Phases 2&3 Regions}
+#' \item{R_EDSM_Regions_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Regions}
+#' \item{R_EDSM_Regions_1819P1}{Equivalent to 2019-2020 Phase 1 Regions}
 #' }
 #' @section Credit:
 #' These datasets were created by the United States Fish and Wildlife Service for the
@@ -164,8 +164,8 @@ NULL
 #' Sometimes the same strata were used in multiple years. In this case, only the first year that set of strata appeared is made available and all years and phases that dataset
 #' applies to are listed below.
 #' \describe{
-#' \item{R_EDSM_Strata_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata.}
-#' \item{R_EDSM_Strata_1819P1}{Equivalent to 2019-2020 Phase 1 Strata.}
+#' \item{R_EDSM_Strata_18P23}{Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata}
+#' \item{R_EDSM_Strata_1819P1}{Equivalent to 2019-2020 Phase 1 Strata}
 #' }
 #' @section Credit:
 #' These datasets were created by the United States Fish and Wildlife Service for the
