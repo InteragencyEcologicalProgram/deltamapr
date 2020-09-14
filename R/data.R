@@ -176,6 +176,10 @@ NULL
 #' leaflet()%>%
 #' addProviderTiles("Esri.WorldGrayCanvas")%>%
 #' addPolygons(data=st_transform(R_EDSM_Strata_1617P1, crs=4326))
+#'
+#' require(ggplot2)
+#' ggplot()+
+#' geom_sf(data=R_EDSM_Strata_1617P1)
 #' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
 NULL
 
