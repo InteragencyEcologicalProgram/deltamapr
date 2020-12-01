@@ -18,6 +18,26 @@
 #' This shapefile was created by the California Department of Fish and Wildlife
 "WW_Delta"
 
+#' Full watershed waterways
+#'
+#' Shapefile of waterways in the San Francisco Estuary and its watershed
+#'
+#' @format a sf tibble with 439 rows and 28 columns.
+#'
+#' @section Credit:
+#' This shapefile includes data from CH2M Hill, and Wetland and Water Resources, CDFG Ecosystem Restoration Program as a part of ERP Stage 2 conservation strategy, and Dan Gillenwater.
+"WW_Watershed"
+
+#' DBW waterways
+#'
+#' Shapefile of waterways in the San Francisco Estuary extending into the Southern Central Valley from the California State Parks Division of Boating and Waterways.
+#'
+#' @format a sf tibble with 321 rows and 16 columns.
+#'
+#' @section Credit:
+#' This shapefile was produced by the California State Parks Division of Boating and Waterways.
+"WW_DBW"
+
 #' Bay-Delta regions
 #'
 #' EDSM regions modified by Brian Mahardja (USFWS)
@@ -33,16 +53,6 @@
 #' @section Credit:
 #' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
 "R_EDSM_Subregions_Mahardja"
-
-#' Full watershed waterways
-#'
-#' Shapefile of waterways in the San Francisco Estuary and its watershed
-#'
-#' @format a sf tibble with 439 rows and 28 columns.
-#'
-#' @section Credit:
-#' This shapefile includes data from CH2M Hill, and Wetland and Water Resources, CDFG Ecosystem Restoration Program as a part of ERP Stage 2 conservation strategy, and Dan Gillenwater.
-"WW_Watershed"
 
 #' California Aquatic Resources Inventory wetlands
 #'

@@ -6,6 +6,7 @@ deltamapr
   - [Data types](#data-types)
   - [Waterways](#waterways)
       - [Delta waterways](#delta-waterways)
+      - [DBW waterways](#dbw-waterways)
       - [Full watershed waterways](#full-watershed-waterways)
   - [Regions](#regions)
       - [Regions](#regions-1)
@@ -124,7 +125,19 @@ ggplot(WW_Delta)+
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-WWDelta-1.png" width="100%" />
+
+## DBW waterways
+
+Produced by the California State Parks Division of Boating and Waterways
+
+``` r
+ggplot(WW_DBW)+
+  geom_sf()+
+  theme_bw()
+```
+
+<img src="man/figures/README-WWDBW-1.png" width="100%" />
 
 ## Full watershed waterways
 
@@ -138,7 +151,7 @@ ggplot(WW_Watershed)+
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-WWWatershed-1.png" width="100%" />
 
 # Regions
 
@@ -153,22 +166,20 @@ Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.ht
 ``` r
 ggplot(R_EDSM_Regions_1617P1)+
   geom_sf(aes(fill=Region))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-REDSMRegions1617P1-1.png" width="100%" />
 
 ### EDSM 2017-18 Phase 1 Regions
 
 ``` r
 ggplot(R_EDSM_Regions_1718P1)+
   geom_sf(aes(fill=Region))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-REDSMRegions1718P1-1.png" width="100%" />
 
 ### EDSM 2018 Phases 2-3 Regions (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Regions)
 
@@ -179,29 +190,27 @@ ggplot(R_EDSM_Regions_18P23)+
   theme()
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-REDSMRegions18P23-1.png" width="100%" />
 
 ### EDSM 2018-19 Phase 1 Regions (Equivalent to 2019-2020 Phase 1 Regions)
 
 ``` r
 ggplot(R_EDSM_Regions_1819P1)+
   geom_sf(aes(fill=Region))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+<img src="man/figures/README-REDSMRegions1819P1-1.png" width="100%" />
 
 ### EDSM 2019 Phase 3 Regions
 
 ``` r
 ggplot(R_EDSM_Regions_19P3)+
   geom_sf(aes(fill=Region))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" />
+<img src="man/figures/README-REDSMRegions19P3-1.png" width="100%" />
 
 ## Strata
 
@@ -214,73 +223,67 @@ ggplot(R_EDSM_Strata_1617P1)+
   theme()
 ```
 
-<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata1617P1-1.png" width="100%" />
 
 ### EDSM 2017 Phase 2 Strata
 
 ``` r
 ggplot(R_EDSM_Strata_17P2)+
   geom_sf(aes(fill=Stratum))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-13-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata17P2-1.png" width="100%" />
 
 ### EDSM 2017 Phase 3 Strata
 
 ``` r
 ggplot(R_EDSM_Strata_17P3)+
   geom_sf(aes(fill=Stratum))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-14-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata17P3-1.png" width="100%" />
 
 ### EDSM 2017-18 Phase 1 Strata
 
 ``` r
 ggplot(R_EDSM_Strata_1718P1)+
   geom_sf(aes(fill=Stratum))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-15-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata1718P1-1.png" width="100%" />
 
 ### EDSM 2018 Phases 2-3 Strata (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Strata)
 
 ``` r
 ggplot(R_EDSM_Strata_18P23)+
   geom_sf(aes(fill=Stratum))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-16-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata18P23-1.png" width="100%" />
 
 ### EDSM 2018-19 Phase 1 Strata (Equivalent to 2019-2020 Phase 1 Strata)
 
 ``` r
 ggplot(R_EDSM_Strata_1819P1)+
   geom_sf(aes(fill=Stratum))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-17-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata1819P1-1.png" width="100%" />
 
 ### EDSM 2019 Phase 3 Strata
 
 ``` r
 ggplot(R_EDSM_Strata_19P3)+
   geom_sf(aes(fill=Stratum))+
-  theme_bw()+
-  theme()
+  theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-18-1.png" width="100%" />
+<img src="man/figures/README-REDSMStrata19P3-1.png" width="100%" />
 
 ## Subregions
 
@@ -293,7 +296,7 @@ ggplot(R_EDSM_Subregions_1617P1)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-19-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregions1617P1-1.png" width="100%" />
 
 ### EDSM 2017 Phase 2 Subregions
 
@@ -304,7 +307,7 @@ ggplot(R_EDSM_Subregions_17P2)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-20-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregions17P2-1.png" width="100%" />
 
 ### EDSM 2017-18 Phase 1 Subregions
 
@@ -315,7 +318,7 @@ ggplot(R_EDSM_Subregions_1718P1)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-21-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregions1718P1-1.png" width="100%" />
 
 ### EDSM 2018 Phases 2-3 Subregions (Equivalent to 2019 Phase 2 and 2020 Phase 2-3 Subregions)
 
@@ -326,7 +329,7 @@ ggplot(R_EDSM_Subregions_18P23)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-22-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregions18P23-1.png" width="100%" />
 
 ### EDSM 2018-19 Phase 1 Subregions (Equivalent to 2019-2020 Phase 1 Subregions)
 
@@ -337,7 +340,7 @@ ggplot(R_EDSM_Subregions_1819P1)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-23-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregions1819P1-1.png" width="100%" />
 
 ### EDSM 2019 Phase 3 Subregions
 
@@ -348,7 +351,7 @@ ggplot(R_EDSM_Subregions_19P3)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-24-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregions19P3-1.png" width="100%" />
 
 ### Brian Mahardja’s edited EDSM subregions
 
@@ -359,7 +362,7 @@ ggplot(R_EDSM_Subregions_Mahardja)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-25-1.png" width="100%" />
+<img src="man/figures/README-REDSMSubregionsMahardja-1.png" width="100%" />
 
 # Habitat
 
@@ -379,7 +382,7 @@ ggplot(H_CARI_wetlands) +
   theme(legend.position = "bottom")
 ```
 
-<img src="man/figures/README-unnamed-chunk-26-1.png" width="100%" />
+<img src="man/figures/README-HCARIwetlands-1.png" width="100%" />
 
 ### CARI streams
 
@@ -389,4 +392,4 @@ ggplot(H_CARI_streams) +
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-27-1.png" width="100%" />
+<img src="man/figures/README-HCARIstreams-1.png" width="100%" />
