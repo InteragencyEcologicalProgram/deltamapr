@@ -1,6 +1,6 @@
 Package: deltamapr
 Title: Spatial Data for the Bay-Delta
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     c(person(given = c("Samuel", "M"),
            family = "Bashevkin",
