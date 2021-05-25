@@ -25,6 +25,6 @@ This shapefile was created by the United States Fish and Wildlife Service for th
 }
 
 \seealso{
-\code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}
+\code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja_FLOAT}}
 }
 \keyword{datasets}

@@ -267,6 +267,17 @@ ggplot(R_EDSM_Subregions_Mahardja)+
   theme(legend.position="none")
 ```
 
+### Modified version of Brian Mahardja's edited EDSM subregions 
+
+This version was created for use by the IEP FLOAT/Drought MAST analyses in 2021. The "Georgiana Slough" and "Sacramento River near Ryde" SubRegions were merged, retaining the "Sacramento River near Ryde" name.
+
+```{r REDSMSubregionsMahardjaFLOAT}
+ggplot(R_EDSM_Subregions_Mahardja_FLOAT)+
+  geom_sf(aes(fill=SubRegion))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
 # Habitat
 
 ## California aquatic resources inventory

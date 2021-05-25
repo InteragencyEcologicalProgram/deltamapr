@@ -49,10 +49,27 @@
 #'   \item{SQM}{Area of subregion in square miles.}
 #'   \item{geometry}{Shapefile polygon coordinates.}
 #' }
-#' @seealso \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}
+#' @seealso \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja_FLOAT}}
 #' @section Credit:
 #' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
 "R_EDSM_Subregions_Mahardja"
+
+#' Bay-Delta regions
+#'
+#' A modified version of \code{\link{R_EDSM_Subregions_Mahardja}} with the "Georgiana Slough" and "Sacramento River near Ryde" SubRegions merged, retaining the "Sacramento River near Ryde" name.
+#' This version was built for the IEP FLOAT/Drought MAST analyses in 2021
+#'
+#' @format a sf tibble with 40 rows and 4 columns.
+#' \describe{
+#'   \item{Region}{Region}
+#'   \item{SubRegion}{SubRegion.}
+#'   \item{SQM}{Area of subregion in square miles.}
+#'   \item{geometry}{Shapefile polygon coordinates.}
+#' }
+#' @seealso \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+#' @section Credit:
+#' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program, modified by Brian Mahardja, then modified by Sam Bashevkin.
+"R_EDSM_Subregions_Mahardja_FLOAT"
 
 #' California Aquatic Resources Inventory wetlands
 #'
@@ -143,7 +160,7 @@
 #' @section Credit:
 #' These datasets were created by the United States Fish and Wildlife Service for the
 #' \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
-#' @seealso \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+#' @seealso \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions}}
 NULL
 
 #' @rdname R_EDSM_Regions
@@ -180,7 +197,7 @@ NULL
 #' @section Credit:
 #' These datasets were created by the United States Fish and Wildlife Service for the
 #' \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
-#' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+#' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}
 NULL
 
 #' @rdname R_EDSM_Strata
@@ -224,7 +241,7 @@ NULL
 #' @section Credit:
 #' These datasets were created by the United States Fish and Wildlife Service for the
 #' \href{https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm}{Enhanced Delta Smelt Monitoring Program}.
-#' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+#' @seealso \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja}}, \code{\link{R_EDSM_Subregions_Mahardja_FLOAT}}
 NULL
 
 #' @rdname R_EDSM_Subregions

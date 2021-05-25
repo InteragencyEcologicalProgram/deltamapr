@@ -67,6 +67,6 @@ These datasets were created by the United States Fish and Wildlife Service for t
 }
 
 \seealso{
-\code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Subregions_Mahardja}}
+\code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Subregions}}
 }
 \keyword{datasets}
