@@ -38,6 +38,35 @@
 #' This shapefile was produced by the California State Parks Division of Boating and Waterways.
 "WW_DBW"
 
+#' Subregions from the Delta Smelt Individual Based Model
+#'
+#' Subregions from the Delta Smelt Individual Based Model
+#'
+#' @format a sf tibble with 41 rows and 4 columns.
+#' \describe{
+#'   \item{TNMID}{TNMID}
+#'   \item{METASOURCE}{METASOURCE}
+#'   \item{SOURCEDATA}{SOURCEDATA}
+#'   \item{SOURCEORIG}{SOURCEORIG}
+#'   \item{SOURCEFEAT}{SOURCEFEAT}
+#'   \item{LOADDATE}{LOADDATE}
+#'   \item{GNIS_ID}{GNIS_ID}
+#'   \item{SubRegion}{SubRegion.}
+#'   \item{AREAACRES}{AREAACRES.}
+#'   \item{AREASQKM}{AREASQKM}
+#'   \item{STATES}{STATES}
+#'   \item{HUC10}{HUC10}
+#'   \item{HUTYPE}{HUTYPE}
+#'   \item{HUMOD}{HUMOD}
+#'   \item{GLOBALID}{GLOBALID}
+#'   \item{SHAPE_Leng}{SHAPE_Leng}
+#'   \item{SHAPE_Area}{SHAPE_Area}
+#'   \item{geometry}{Shapefile polygon coordinates.}
+#' }
+#' @section Credit:
+#' This shapefile was created by ?.
+"R_DSIBM"
+
 #' Bay-Delta regions
 #'
 #' EDSM regions modified by Brian Mahardja (USFWS)
