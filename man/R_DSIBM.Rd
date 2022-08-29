@@ -35,7 +35,9 @@ Subregions from the Delta Smelt Individual Based Model
 }
 \section{Credit}{
 
-This shapefile was created by ?.
+This shapefile was created by Flow West, Rose et al. 2013, and Peterson et al. 2019.
+Peterson, J., E. McCreless, A. Duarte, S. Hamilton, and J. Medellin-Azuara. 2019. Structured Decision Making for Scientific Management in the San Francisco Bay-Delta. Draft progress report, US Bureau of Reclamation, Sacramento, CA. Data available on: https://github.com/CSAMP/delta-secchi-temperature-data.
+Rose, K. A., W. J. Kimmerer, K. P. Edwards, and W. A. Bennett. 2013. Individual-Based Modeling of Delta Smelt Population Dynamics in the Upper San Francisco Estuary: I. Model Description and Baseline Results. Transactions of the American Fisheries Society 142:1238–1259.
 }
 
 \keyword{datasets}

@@ -10,17 +10,7 @@ Authors@R:
       person(given = "Arthur",
            family = "Barros",
            role = c("aut"),
-           email = "Arthur.Barros@Wildlife.ca.gov"),
-      person(given = "Rosemary",
-           family = "Hartman",
-           role = c("ctr"),
-           email = "Rosemary.Hartman@water.ca.gov",
-           comment = c(ORCID = "0000-0002-0642-183X")),
-      person(given = c("James", "A"),
-           family = "Hobbs",
-           role = c("ctr"),
-           email = "James.Hobbs@wildlife.ca.gov",
-           comment = c(ORCID = "0000-0002-4052-9000")))
+           email = "Arthur.Barros@Wildlife.ca.gov"))
 Description: Data package of useful spatial data for the Bay-Delta.
 License: CC BY 4.0
 Encoding: UTF-8

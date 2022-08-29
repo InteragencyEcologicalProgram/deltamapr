@@ -97,7 +97,7 @@ ggplot(WW_Watershed)+
 
 # Regions
 
-All regions are derived from the united States Fish and Wildlife Service [Enhanced Delta Smelt Monitoring Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm).
+Most regions are derived from the united States Fish and Wildlife Service [Enhanced Delta Smelt Monitoring Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm) (EDSM).
 
 ## Regions
 
@@ -277,6 +277,20 @@ ggplot(R_EDSM_Subregions_Mahardja_FLOAT)+
   theme_bw()+
   theme(legend.position="none")
 ```
+
+### SubRegions from the Delta Smelt individual based model
+
+This shapefile was created by Flow West, Rose et al. 2013, and Peterson et al. 2019.
+Peterson, J., E. McCreless, A. Duarte, S. Hamilton, and J. Medellin-Azuara. 2019. Structured Decision Making for Scientific Management in the San Francisco Bay-Delta. Draft progress report, US Bureau of Reclamation, Sacramento, CA. Data available on: https://github.com/CSAMP/delta-secchi-temperature-data.
+Rose, K. A., W. J. Kimmerer, K. P. Edwards, and W. A. Bennett. 2013. Individual-Based Modeling of Delta Smelt Population Dynamics in the Upper San Francisco Estuary: I. Model Description and Baseline Results. Transactions of the American Fisheries Society 142:1238–1259.
+
+```{r}
+ggplot(R_DSIBM)+
+  geom_sf(aes(fill=SUBREGION))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
 
 # Habitat
 

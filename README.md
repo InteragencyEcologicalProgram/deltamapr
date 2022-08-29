@@ -1,23 +1,24 @@
 deltamapr
 ================
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Data types](#data-types)
-  - [Waterways](#waterways)
-      - [Delta waterways](#delta-waterways)
-      - [DBW waterways](#dbw-waterways)
-      - [Full watershed waterways](#full-watershed-waterways)
-  - [Regions](#regions)
-      - [Regions](#regions-1)
-      - [Strata](#strata)
-      - [Subregions](#subregions)
-  - [Habitat](#habitat)
-      - [California aquatic resources
-        inventory](#california-aquatic-resources-inventory)
+-   <a href="#installation" id="toc-installation">Installation</a>
+-   <a href="#usage" id="toc-usage">Usage</a>
+-   <a href="#data-types" id="toc-data-types">Data types</a>
+-   <a href="#waterways" id="toc-waterways">Waterways</a>
+    -   <a href="#delta-waterways" id="toc-delta-waterways">Delta waterways</a>
+    -   <a href="#dbw-waterways" id="toc-dbw-waterways">DBW waterways</a>
+    -   <a href="#full-watershed-waterways"
+        id="toc-full-watershed-waterways">Full watershed waterways</a>
+-   <a href="#regions" id="toc-regions">Regions</a>
+    -   <a href="#regions-1" id="toc-regions-1">Regions</a>
+    -   <a href="#strata" id="toc-strata">Strata</a>
+    -   <a href="#subregions" id="toc-subregions">Subregions</a>
+-   <a href="#habitat" id="toc-habitat">Habitat</a>
+    -   <a href="#california-aquatic-resources-inventory"
+        id="toc-california-aquatic-resources-inventory">California aquatic
+        resources inventory</a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![R build
@@ -45,28 +46,27 @@ with:
 ``` r
 require(sf) # To ensure `sf` objects print correctly
 #> Loading required package: sf
-#> Warning: package 'sf' was built under R version 4.0.5
-#> Linking to GEOS 3.9.0, GDAL 3.2.1, PROJ 7.2.1
+#> Linking to GEOS 3.9.1, GDAL 3.3.2, PROJ 7.2.1; sf_use_s2() is TRUE
 deltamapr::WW_Delta
 #> Simple feature collection with 282 features and 9 fields
 #> Geometry type: POLYGON
 #> Dimension:     XY
 #> Bounding box:  xmin: -122.6408 ymin: 37.41522 xmax: -120.9357 ymax: 38.67781
 #> Geodetic CRS:  NAD83
-#> # A tibble: 282 x 10
-#>       AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO_24K_ TYPE  HNAME     Shape_Leng
-#>      <dbl>     <dbl>      <int>      <int>      <int> <chr> <chr>          <dbl>
-#>  1  7.35e7  1033340         791        797        798 MR    SACRAMEN~    2.45   
-#>  2  8.76e4     3319.       1965       1963       1964 S     W            0.0357 
-#>  3  7.92e6    87428.       1967       1965       1966 C     SACTO. R~    0.829  
-#>  4  1.04e5     2719.       1970       1969       1970 L     GREENS L~    0.0264 
-#>  5  1.06e5     2798.       1977       1974       1975 L     LAKE WAS~    0.0283 
-#>  6  1.59e5     3392.       1982       1978       1979 S     W            0.0314 
-#>  7  4.26e4     1003.       1992       1989       1990 S     W            0.00952
-#>  8  5.65e3      498.       2001       2008       2009 MR    SOUTH FO~    0.00548
-#>  9  4.14e3      502.       2006       2012       2013 MR    SOUTH FO~    0.00536
-#> 10  9.78e4     6630.       2008       2011       2012 MR    SOUTH FO~    0.0746 
-#> # ... with 272 more rows, and 2 more variables: Shape_Area <dbl>,
+#> # A tibble: 282 × 10
+#>         AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO_24K_ TYPE  HNAME   Shape_Leng
+#>        <dbl>     <dbl>      <int>      <int>      <int> <chr> <chr>        <dbl>
+#>  1 73544304   1033340         791        797        798 MR    SACRAM…    2.45   
+#>  2    87637.     3319.       1965       1963       1964 S     W          0.0357 
+#>  3  7915130     87428.       1967       1965       1966 C     SACTO.…    0.829  
+#>  4   103906      2719.       1970       1969       1970 L     GREENS…    0.0264 
+#>  5   106371      2798.       1977       1974       1975 L     LAKE W…    0.0283 
+#>  6   159485      3392.       1982       1978       1979 S     W          0.0314 
+#>  7    42597.     1003.       1992       1989       1990 S     W          0.00952
+#>  8     5648.      498.       2001       2008       2009 MR    SOUTH …    0.00548
+#>  9     4139.      502.       2006       2012       2013 MR    SOUTH …    0.00536
+#> 10    97840.     6630.       2008       2011       2012 MR    SOUTH …    0.0746 
+#> # … with 272 more rows, and 2 more variables: Shape_Area <dbl>,
 #> #   geometry <POLYGON [°]>
 ```
 
@@ -81,20 +81,20 @@ WW_Delta
 #> Dimension:     XY
 #> Bounding box:  xmin: -122.6408 ymin: 37.41522 xmax: -120.9357 ymax: 38.67781
 #> Geodetic CRS:  NAD83
-#> # A tibble: 282 x 10
-#>       AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO_24K_ TYPE  HNAME     Shape_Leng
-#>      <dbl>     <dbl>      <int>      <int>      <int> <chr> <chr>          <dbl>
-#>  1  7.35e7  1033340         791        797        798 MR    SACRAMEN~    2.45   
-#>  2  8.76e4     3319.       1965       1963       1964 S     W            0.0357 
-#>  3  7.92e6    87428.       1967       1965       1966 C     SACTO. R~    0.829  
-#>  4  1.04e5     2719.       1970       1969       1970 L     GREENS L~    0.0264 
-#>  5  1.06e5     2798.       1977       1974       1975 L     LAKE WAS~    0.0283 
-#>  6  1.59e5     3392.       1982       1978       1979 S     W            0.0314 
-#>  7  4.26e4     1003.       1992       1989       1990 S     W            0.00952
-#>  8  5.65e3      498.       2001       2008       2009 MR    SOUTH FO~    0.00548
-#>  9  4.14e3      502.       2006       2012       2013 MR    SOUTH FO~    0.00536
-#> 10  9.78e4     6630.       2008       2011       2012 MR    SOUTH FO~    0.0746 
-#> # ... with 272 more rows, and 2 more variables: Shape_Area <dbl>,
+#> # A tibble: 282 × 10
+#>         AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO_24K_ TYPE  HNAME   Shape_Leng
+#>        <dbl>     <dbl>      <int>      <int>      <int> <chr> <chr>        <dbl>
+#>  1 73544304   1033340         791        797        798 MR    SACRAM…    2.45   
+#>  2    87637.     3319.       1965       1963       1964 S     W          0.0357 
+#>  3  7915130     87428.       1967       1965       1966 C     SACTO.…    0.829  
+#>  4   103906      2719.       1970       1969       1970 L     GREENS…    0.0264 
+#>  5   106371      2798.       1977       1974       1975 L     LAKE W…    0.0283 
+#>  6   159485      3392.       1982       1978       1979 S     W          0.0314 
+#>  7    42597.     1003.       1992       1989       1990 S     W          0.00952
+#>  8     5648.      498.       2001       2008       2009 MR    SOUTH …    0.00548
+#>  9     4139.      502.       2006       2012       2013 MR    SOUTH …    0.00536
+#> 10    97840.     6630.       2008       2011       2012 MR    SOUTH …    0.0746 
+#> # … with 272 more rows, and 2 more variables: Shape_Area <dbl>,
 #> #   geometry <POLYGON [°]>
 ```
 
@@ -156,9 +156,10 @@ ggplot(WW_Watershed)+
 
 # Regions
 
-All regions are derived from the united States Fish and Wildlife Service
-[Enhanced Delta Smelt Monitoring
-Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm).
+Most regions are derived from the united States Fish and Wildlife
+Service [Enhanced Delta Smelt Monitoring
+Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm)
+(EDSM).
 
 ## Regions
 
@@ -379,6 +380,28 @@ ggplot(R_EDSM_Subregions_Mahardja_FLOAT)+
 ```
 
 <img src="man/figures/README-REDSMSubregionsMahardjaFLOAT-1.png" width="100%" />
+
+### SubRegions from the Delta Smelt individual based model
+
+This shapefile was created by Flow West, Rose et al. 2013, and Peterson
+et al. 2019. Peterson, J., E. McCreless, A. Duarte, S. Hamilton, and J.
+Medellin-Azuara. 2019. Structured Decision Making for Scientific
+Management in the San Francisco Bay-Delta. Draft progress report, US
+Bureau of Reclamation, Sacramento, CA. Data available on:
+<https://github.com/CSAMP/delta-secchi-temperature-data>. Rose, K. A.,
+W. J. Kimmerer, K. P. Edwards, and W. A. Bennett. 2013. Individual-Based
+Modeling of Delta Smelt Population Dynamics in the Upper San Francisco
+Estuary: I. Model Description and Baseline Results. Transactions of the
+American Fisheries Society 142:1238–1259.
+
+``` r
+ggplot(R_DSIBM)+
+  geom_sf(aes(fill=SUBREGION))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 # Habitat
 
