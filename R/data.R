@@ -69,6 +69,44 @@
 #' Rose, K. A., W. J. Kimmerer, K. P. Edwards, and W. A. Bennett. 2013. Individual-Based Modeling of Delta Smelt Population Dynamics in the Upper San Francisco Estuary: I. Model Description and Baseline Results. Transactions of the American Fisheries Society 142:1238–1259.
 "R_DSIBM"
 
+#' Legal Delta Boundary
+#'
+#' Boundary of the Legal Delta
+#'
+#' @format a sf tibble with 1 row and 9 columns.
+#' \describe{
+#'   \item{OBJECTID}{OBJECTID}
+#'   \item{comments}{comments}
+#'   \item{Source}{Source}
+#'   \item{Date_Recor}{Date_Recor}
+#'   \item{Edited_By}{Edited_By}
+#'   \item{Date_Data_}{Date_Data_}
+#'   \item{GlobalID}{GlobalID}
+#'   \item{Shape__Are}{Shape__Are}
+#'   \item{Shape__Len}{Shape__Len}
+#'   \item{geometry}{Shapefile polygon coordinates.}
+#' }
+#' @section Credit:
+#' This shapefile was published by the California Department of Water Resources and can be found along with metadata in the \href{https://data.cnra.ca.gov/dataset/i03-legaldeltaboundary1}{data publication}.
+"R_Delta"
+
+#' Suisun Marsh Boundary
+#'
+#' Boundary of Suisun Marsh
+#'
+#' @format a sf tibble with 1 row and 9 columns.
+#' \describe{
+#'   \item{OBJECTID}{OBJECTID}
+#'   \item{LOCATION}{LOCATION}
+#'   \item{GlobalID}{GlobalID}
+#'   \item{Shape__Are}{Shape__Are}
+#'   \item{Shape__Len}{Shape__Len}
+#'   \item{geometry}{Shapefile polygon coordinates.}
+#' }
+#' @section Credit:
+#' This shapefile was published by the California Department of Water Resources and can be found along with metadata in the \href{https://data.cnra.ca.gov/dataset/i03-suisunmarshboundary1}{data publication}.
+"R_Suisun"
+
 #' Bay-Delta regions
 #'
 #' EDSM regions modified by Brian Mahardja (USFWS)

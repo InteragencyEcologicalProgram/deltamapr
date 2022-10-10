@@ -46,7 +46,8 @@ with:
 ``` r
 require(sf) # To ensure `sf` objects print correctly
 #> Loading required package: sf
-#> Linking to GEOS 3.9.1, GDAL 3.3.2, PROJ 7.2.1; sf_use_s2() is TRUE
+#> Warning: package 'sf' was built under R version 4.2.1
+#> Linking to GEOS 3.9.1, GDAL 3.4.3, PROJ 7.2.1; sf_use_s2() is TRUE
 deltamapr::WW_Delta
 #> Simple feature collection with 282 features and 9 fields
 #> Geometry type: POLYGON
@@ -54,20 +55,20 @@ deltamapr::WW_Delta
 #> Bounding box:  xmin: -122.6408 ymin: 37.41522 xmax: -120.9357 ymax: 38.67781
 #> Geodetic CRS:  NAD83
 #> # A tibble: 282 × 10
-#>         AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO_24K_ TYPE  HNAME   Shape_Leng
-#>        <dbl>     <dbl>      <int>      <int>      <int> <chr> <chr>        <dbl>
-#>  1 73544304   1033340         791        797        798 MR    SACRAM…    2.45   
-#>  2    87637.     3319.       1965       1963       1964 S     W          0.0357 
-#>  3  7915130     87428.       1967       1965       1966 C     SACTO.…    0.829  
-#>  4   103906      2719.       1970       1969       1970 L     GREENS…    0.0264 
-#>  5   106371      2798.       1977       1974       1975 L     LAKE W…    0.0283 
-#>  6   159485      3392.       1982       1978       1979 S     W          0.0314 
-#>  7    42597.     1003.       1992       1989       1990 S     W          0.00952
-#>  8     5648.      498.       2001       2008       2009 MR    SOUTH …    0.00548
-#>  9     4139.      502.       2006       2012       2013 MR    SOUTH …    0.00536
-#> 10    97840.     6630.       2008       2011       2012 MR    SOUTH …    0.0746 
-#> # … with 272 more rows, and 2 more variables: Shape_Area <dbl>,
-#> #   geometry <POLYGON [°]>
+#>         AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO…¹ TYPE  HNAME Shape…² Shape…³
+#>        <dbl>     <dbl>      <int>      <int>   <int> <chr> <chr>   <dbl>   <dbl>
+#>  1 73544304   1033340         791        797     798 MR    SACR… 2.45    3.48e-3
+#>  2    87637.     3319.       1965       1963    1964 S     W     0.0357  9.06e-6
+#>  3  7915130     87428.       1967       1965    1966 C     SACT… 0.829   8.17e-4
+#>  4   103906      2719.       1970       1969    1970 L     GREE… 0.0264  1.07e-5
+#>  5   106371      2798.       1977       1974    1975 L     LAKE… 0.0283  1.10e-5
+#>  6   159485      3392.       1982       1978    1979 S     W     0.0314  1.65e-5
+#>  7    42597.     1003.       1992       1989    1990 S     W     0.00952 4.40e-6
+#>  8     5648.      498.       2001       2008    2009 MR    SOUT… 0.00548 5.84e-7
+#>  9     4139.      502.       2006       2012    2013 MR    SOUT… 0.00536 4.28e-7
+#> 10    97840.     6630.       2008       2011    2012 MR    SOUT… 0.0746  1.01e-5
+#> # … with 272 more rows, 1 more variable: geometry <POLYGON [°]>, and
+#> #   abbreviated variable names ¹​HYDRO_24K_, ²​Shape_Leng, ³​Shape_Area
 ```
 
 Or, after loading the package, like this:
@@ -82,20 +83,20 @@ WW_Delta
 #> Bounding box:  xmin: -122.6408 ymin: 37.41522 xmax: -120.9357 ymax: 38.67781
 #> Geodetic CRS:  NAD83
 #> # A tibble: 282 × 10
-#>         AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO_24K_ TYPE  HNAME   Shape_Leng
-#>        <dbl>     <dbl>      <int>      <int>      <int> <chr> <chr>        <dbl>
-#>  1 73544304   1033340         791        797        798 MR    SACRAM…    2.45   
-#>  2    87637.     3319.       1965       1963       1964 S     W          0.0357 
-#>  3  7915130     87428.       1967       1965       1966 C     SACTO.…    0.829  
-#>  4   103906      2719.       1970       1969       1970 L     GREENS…    0.0264 
-#>  5   106371      2798.       1977       1974       1975 L     LAKE W…    0.0283 
-#>  6   159485      3392.       1982       1978       1979 S     W          0.0314 
-#>  7    42597.     1003.       1992       1989       1990 S     W          0.00952
-#>  8     5648.      498.       2001       2008       2009 MR    SOUTH …    0.00548
-#>  9     4139.      502.       2006       2012       2013 MR    SOUTH …    0.00536
-#> 10    97840.     6630.       2008       2011       2012 MR    SOUTH …    0.0746 
-#> # … with 272 more rows, and 2 more variables: Shape_Area <dbl>,
-#> #   geometry <POLYGON [°]>
+#>         AREA PERIMETER HYDRO_POLY HYDRO_PO_1 HYDRO…¹ TYPE  HNAME Shape…² Shape…³
+#>        <dbl>     <dbl>      <int>      <int>   <int> <chr> <chr>   <dbl>   <dbl>
+#>  1 73544304   1033340         791        797     798 MR    SACR… 2.45    3.48e-3
+#>  2    87637.     3319.       1965       1963    1964 S     W     0.0357  9.06e-6
+#>  3  7915130     87428.       1967       1965    1966 C     SACT… 0.829   8.17e-4
+#>  4   103906      2719.       1970       1969    1970 L     GREE… 0.0264  1.07e-5
+#>  5   106371      2798.       1977       1974    1975 L     LAKE… 0.0283  1.10e-5
+#>  6   159485      3392.       1982       1978    1979 S     W     0.0314  1.65e-5
+#>  7    42597.     1003.       1992       1989    1990 S     W     0.00952 4.40e-6
+#>  8     5648.      498.       2001       2008    2009 MR    SOUT… 0.00548 5.84e-7
+#>  9     4139.      502.       2006       2012    2013 MR    SOUT… 0.00536 4.28e-7
+#> 10    97840.     6630.       2008       2011    2012 MR    SOUT… 0.0746  1.01e-5
+#> # … with 272 more rows, 1 more variable: geometry <POLYGON [°]>, and
+#> #   abbreviated variable names ¹​HYDRO_24K_, ²​Shape_Leng, ³​Shape_Area
 ```
 
 ## Data types
@@ -162,6 +163,35 @@ Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.ht
 (EDSM).
 
 ## Regions
+
+### Legal Delta Boundary
+
+The legal Delta boundary as
+[published](https://data.cnra.ca.gov/dataset/i03-legaldeltaboundary1) by
+the California Department of Water Resources
+
+``` r
+ggplot(R_Delta)+
+  geom_sf(fill="darkorchid4")+
+  theme_bw()
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
+### Suisun Marsh Boundary
+
+The Suisun Marsh boundary as
+[published](https://data.cnra.ca.gov/dataset/i03-suisunmarshboundary1)
+by the California Department of Water Resources
+
+``` r
+ggplot(R_Suisun)+
+  geom_sf(aes(fill=LOCATION))+
+  theme_bw()+
+  theme(legend.position="none")
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 ### EDSM 2016-17 Phase 1 Regions (Equivalent to 2017 Phases 2&3 Regions.)
 
@@ -401,7 +431,7 @@ ggplot(R_DSIBM)+
   theme(legend.position="none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 # Habitat
 
