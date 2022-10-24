@@ -5,7 +5,7 @@ Authors@R:
     c(person(given = c("Samuel", "M"),
            family = "Bashevkin",
            role = c("aut", "cre"),
-           email = "sam.bashevkin@deltacouncil.ca.gov",
+           email = "sam.bashevkin@waterboards.ca.gov",
            comment = c(ORCID = "0000-0001-7406-7089")),
       person(given = "Arthur",
            family = "Barros",
