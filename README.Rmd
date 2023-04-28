@@ -28,7 +28,17 @@ The goal of deltamapr is to provide spatial data for the Bay-Delta.
 
 ## Installation
 
-You can install the development version from [GitHub](https://github.com/) with:
+You can install the latest version from R-universe with:
+
+``` r
+options(repos = c(
+    sbashevkin = 'https://sbashevkin.r-universe.dev',
+    CRAN = 'https://cloud.r-project.org'))
+
+install.packages("deltamapr")
+```
+
+Or from GitHub with:
 
 ``` r
 # install.packages("devtools")
