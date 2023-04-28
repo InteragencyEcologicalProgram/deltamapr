@@ -21,8 +21,7 @@ deltamapr
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/InteragencyEcologicalProgram/deltamapr/workflows/R-CMD-check/badge.svg)](https://github.com/InteragencyEcologicalProgram/deltamapr/actions)
+[![R-CMD-check](https://github.com/InteragencyEcologicalProgram/deltamapr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/InteragencyEcologicalProgram/deltamapr/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of deltamapr is to provide spatial data for the Bay-Delta.
