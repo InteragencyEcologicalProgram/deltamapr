@@ -126,7 +126,9 @@ require(sf)
 
 ## Delta waterways
 
-Produced by the California Department of Fish and Wildlife
+Supplied by the California Department of Fish and Wildlife and created
+by the USBR MPGIS Service Center via digitizing from 7.5 minute USGS
+quat sheets.
 
 ``` r
 ggplot(WW_Delta)+
