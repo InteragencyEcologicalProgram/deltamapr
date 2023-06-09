@@ -1,4 +1,5 @@
 # deltamapr 1.0.0
+* Added a table of major IEP sampling stations
 
 # deltamapr 0.0.0.9000
 
