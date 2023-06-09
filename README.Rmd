@@ -62,11 +62,12 @@ WW_Delta
 
 ## Data types
 
-Three spatial data types are included in this package
+Four spatial data types are included in this package
 
 1) **Waterways**: Shapefiles of water coverage. These data files are preceded by the prefix *WW*.
 2) **Regions**: Shapefiles with sets of regions, subregions, or strata. These data files are preceded by the prefix *R*.
 3) **Habitat**: Shapefiles with habitat data. These data files are preceded by the prefix *H*.
+4) **Stations**: Shapefile with data on most IEP long-term monitoring programs.
 
 # Waterways
 
@@ -344,4 +345,21 @@ ggplot(H_CARI_wetlands) +
 ggplot(H_CARI_streams) +
   geom_sf()+
   theme_bw()
+```
+
+# Stations
+
+## Stations from IEP's long term monitoring surveys
+
+These data were collated from the discretewq package, zooper package, and other IEP data published on EDI. Code was modified from:
+https://deltascience.shinyapps.io/monitoring/ 
+
+### Stations
+
+```{r Stations, fig.height=12}
+ggplot() +
+  geom_sf(data = WW_Delta)+
+  geom_sf(data = Stations, aes(color = Source))+
+  theme_bw()+
+  theme(legend.position = "bottom")
 ```
