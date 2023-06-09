@@ -18,6 +18,23 @@
 #' This shapefile was supplied by the California Department of Fish and Wildlife and created by the USBR MPGIS Service Center via digitizing from 7.5 minute USGS quat sheets.
 "WW_Delta"
 
+#' Stations
+#'
+#' Shapefile with regular sampling locations for most IEP surveys used between 2015 and 2021
+#'
+#' @rdname Stations
+#' @name Stations
+#' @format a sf tibble with 954 rows and 7 columns.
+#' \describe{
+#'   \item{Station}{Code used for station.}
+#'   \item{StationName}{Full name of station (if applicable).}
+#'   \item{Latitude}{Latitude in decimal degrees, WGS84.}
+#'   \item{Longitude}{Longitude in decimal degrees, WGS84.}
+#'   \item{Parameter}{Type of data collected.}
+#'   \item{Source}{Name of sampling program.}
+#'   \item{geometry}{Shapefile point coordinates.}
+#' }
+
 #' Full watershed waterways
 #'
 #' Shapefile of waterways in the San Francisco Estuary and its watershed
@@ -331,18 +348,4 @@ NULL
 #' @rdname R_EDSM_Subregions
 "R_EDSM_Subregions_19P3"
 
-#' SamplingSites
-#'
-#' Shapefile with regular sampling locations for most IEP surveys used between 2015 and 2021
-#'
-#' @format a sf tibble with 954 rows and 7 columns.
-#' \describe{
-#'   \item{Station}{Code used for station.}
-#'   \item{StationName}{Full name of station (if applicable).}
-#'   \item{Latitude}{Latitude in decimal degrees, WGS84.}
-#'   \item{Longitude}{Longitude in decimal degrees, WGS84.}
-#'   \item{Parameter}{Type of data collected.}
-#'   \item{Source}{Name of sampling program.}
-#'   \item{geometry}{Shapefile point coordinates.}
-#' }
 

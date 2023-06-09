@@ -26,7 +26,7 @@ Shapefile of delta waterways
 }
 \section{Credit}{
 
-This shapefile was created by the California Department of Fish and Wildlife
+This shapefile was supplied by the California Department of Fish and Wildlife and created by the USBR MPGIS Service Center via digitizing from 7.5 minute USGS quat sheets.
 }
 
 \keyword{datasets}

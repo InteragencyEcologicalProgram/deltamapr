@@ -159,4 +159,4 @@ Stations<-bind_rows(benthic_stations, phyto_stations, Zoop, WQ, Fish, cdec) %>%
 #   geom_sf(data = deltamapr::WW_Delta)+
 #   geom_sf(data = Stations, aes(color = Source))
 
-save(Stations, file="data/SamplingSites.rda")
+save(Stations, file="data/Stations.rda")
