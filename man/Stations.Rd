@@ -3,7 +3,6 @@
 \docType{data}
 \name{Stations}
 \alias{Stations}
-\alias{WW_Watershed}
 \title{Stations}
 \format{
 a sf tibble with 954 rows and 7 columns.
@@ -16,21 +15,11 @@ a sf tibble with 954 rows and 7 columns.
 \item{Source}{Name of sampling program.}
 \item{geometry}{Shapefile point coordinates.}
 }
-Full watershed waterways
-
-Shapefile of waterways in the San Francisco Estuary and its watershed
-
-a sf tibble with 439 rows and 28 columns.
 }
 \usage{
-WW_Watershed
+Stations
 }
 \description{
 Shapefile with regular sampling locations for most IEP surveys used between 2015 and 2021
 }
-\section{Credit}{
-
-This shapefile includes data from CH2M Hill, and Wetland and Water Resources, CDFG Ecosystem Restoration Program as a part of ERP Stage 2 conservation strategy, and Dan Gillenwater.
-}
-
 \keyword{datasets}
