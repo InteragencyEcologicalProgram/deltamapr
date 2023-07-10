@@ -210,12 +210,12 @@
 "H_CARI_streams"
 
 
-#' Stations
+#' P_Stations
 #'
 #' Shapefile with regular sampling locations for most IEP surveys used between 2015 and 2021
 #'
-#' @rdname Stations
-#' @name Stations
+#' @rdname P_Stations
+#' @name P_Stations
 #' @format a sf tibble with 954 rows and 7 columns.
 #' \describe{
 #'   \item{Station}{Code used for station.}
@@ -226,7 +226,7 @@
 #'   \item{Source}{Name of sampling program.}
 #'   \item{geometry}{Shapefile point coordinates.}
 #' }
-"Stations"
+"P_Stations"
 
 #' EDSM Regions
 #'

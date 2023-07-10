@@ -1,5 +1,5 @@
 require(dplyr)
-require(deltareportr)
+#require(deltareportr)
 require(lubridate)
 require(stringr)
 require(discretewq)
@@ -114,7 +114,7 @@ WQ<-wq(Start_year = 2015, End_year = 2021,
 Fish<-wq(Start_year = 2015, End_year = 2021,
          Sources = c("STN", "FMWT", "DJFMP", "SKT", "20mm", "Suisun",
                      "Baystudy", "SLS"))%>%
-  bind_rows(YBFMP_fish)%>%
+  bind_rows(YBFMP_stations_fish)%>%
   mutate(Parameter= case_when(Source == "FMWT" ~ "MDWT",
                               Source == "Suisun" ~ "Otter Trawl",
                               Source == "Baystudy" ~ "MDWT and Otter",
@@ -140,6 +140,9 @@ phyto_stations = rename(phyto, Station = StationCode, StationName = Location) %>
   select(Station, StationName, Latitude, Longitude) %>%
   mutate(Parameter = "Phytoplankton", Source = "EMP")
 
+## Water quality ----------------------------------------------------------------
+#I had a heck of a time automating pulling of the cdec station coordinates, so I just made a .csv for now.
+
 cdec = read_csv("data-raw/CDEC_stations.csv") %>%
   rename(Station = STA, StationName = `Station Name`) %>%
   mutate(Parameter = "Cont_Water_Quality", Source = "CDEC") %>%
@@ -147,7 +150,7 @@ cdec = read_csv("data-raw/CDEC_stations.csv") %>%
 
 # Merge everything --------------------------------------------------------
 
-Stations<-bind_rows(benthic_stations, phyto_stations, Zoop, WQ, Fish, cdec) %>%
+P_Stations<-bind_rows(benthic_stations, phyto_stations, Zoop, WQ, Fish, cdec) %>%
   filter(!is.na(Latitude)) %>%
   select(Station, StationName, Latitude, Longitude, Parameter, Source) %>%
   distinct() %>%
@@ -159,4 +162,4 @@ Stations<-bind_rows(benthic_stations, phyto_stations, Zoop, WQ, Fish, cdec) %>%
 #   geom_sf(data = deltamapr::WW_Delta)+
 #   geom_sf(data = Stations, aes(color = Source))
 
-save(Stations, file="data/Stations.rda")
+usethis::use_data(P_Stations, overwrite = TRUE)
