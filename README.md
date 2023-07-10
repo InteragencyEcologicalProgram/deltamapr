@@ -1,22 +1,23 @@
 deltamapr
 ================
 
-- <a href="#installation" id="toc-installation">Installation</a>
-- <a href="#usage" id="toc-usage">Usage</a>
-- <a href="#data-types" id="toc-data-types">Data types</a>
-- <a href="#waterways" id="toc-waterways">Waterways</a>
-  - <a href="#delta-waterways" id="toc-delta-waterways">Delta waterways</a>
-  - <a href="#dbw-waterways" id="toc-dbw-waterways">DBW waterways</a>
-  - <a href="#full-watershed-waterways"
-    id="toc-full-watershed-waterways">Full watershed waterways</a>
-- <a href="#regions" id="toc-regions">Regions</a>
-  - <a href="#regions-1" id="toc-regions-1">Regions</a>
-  - <a href="#strata" id="toc-strata">Strata</a>
-  - <a href="#subregions" id="toc-subregions">Subregions</a>
-- <a href="#habitat" id="toc-habitat">Habitat</a>
-  - <a href="#california-aquatic-resources-inventory"
-    id="toc-california-aquatic-resources-inventory">California aquatic
-    resources inventory</a>
+- [Installation](#installation)
+- [Usage](#usage)
+- [Data types](#data-types)
+- [Waterways](#waterways)
+  - [Delta waterways](#delta-waterways)
+  - [DBW waterways](#dbw-waterways)
+  - [Full watershed waterways](#full-watershed-waterways)
+- [Regions](#regions)
+  - [Regions](#regions-1)
+  - [Strata](#strata)
+  - [Subregions](#subregions)
+- [Habitat](#habitat)
+  - [California aquatic resources
+    inventory](#california-aquatic-resources-inventory)
+- [Stations](#stations)
+  - [Stations from IEP’s long term monitoring
+    surveys](#stations-from-ieps-long-term-monitoring-surveys)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -54,7 +55,7 @@ with:
 ``` r
 require(sf) # To ensure `sf` objects print correctly
 #> Loading required package: sf
-#> Linking to GEOS 3.9.3, GDAL 3.5.2, PROJ 8.2.1; sf_use_s2() is TRUE
+#> Linking to GEOS 3.11.1, GDAL 3.6.2, PROJ 9.1.1; sf_use_s2() is TRUE
 deltamapr::WW_Delta
 #> Simple feature collection with 282 features and 9 fields
 #> Geometry type: POLYGON
@@ -108,7 +109,7 @@ WW_Delta
 
 ## Data types
 
-Three spatial data types are included in this package
+Four spatial data types are included in this package
 
 1)  **Waterways**: Shapefiles of water coverage. These data files are
     preceded by the prefix *WW*.
@@ -116,6 +117,8 @@ Three spatial data types are included in this package
     These data files are preceded by the prefix *R*.
 3)  **Habitat**: Shapefiles with habitat data. These data files are
     preceded by the prefix *H*.
+4)  **Stations**: Shapefile with data on most IEP long-term monitoring
+    programs.These data files are preceded by the prefix *P*.
 
 # Waterways
 
@@ -471,3 +474,27 @@ ggplot(H_CARI_streams) +
 ```
 
 <img src="man/figures/README-HCARIstreams-1.png" width="100%" />
+
+# Stations
+
+## Stations from IEP’s long term monitoring surveys
+
+These data were collated from the discretewq package, zooper package,
+and other IEP data published on EDI. Code was modified from:
+<https://github.com/sbashevkin/stations>
+
+This file only reflects stations that are active or have been active
+recently (2015-2021). You can visualize stations by year here:
+<https://deltascience.shinyapps.io/monitoring/>
+
+### Stations
+
+``` r
+ggplot() +
+  geom_sf(data = WW_Delta)+
+  geom_sf(data = P_Stations, aes(color = Source))+
+  theme_bw()+
+  theme(legend.position = "bottom")
+```
+
+<img src="man/figures/README-Stations-1.png" width="100%" />

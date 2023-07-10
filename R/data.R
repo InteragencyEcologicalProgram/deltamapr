@@ -209,6 +209,25 @@
 #' This dataset was created by the San Francisco Estuary Institute and is available (along with full metadata) \href{https://www.sfei.org/data/california-aquatic-resource-inventory-cari-version-03-gis-data}{here}.
 "H_CARI_streams"
 
+
+#' P_Stations
+#'
+#' Shapefile with regular sampling locations for most IEP surveys used between 2015 and 2021
+#'
+#' @rdname P_Stations
+#' @name P_Stations
+#' @format a sf tibble with 954 rows and 7 columns.
+#' \describe{
+#'   \item{Station}{Code used for station.}
+#'   \item{StationName}{Full name of station (if applicable).}
+#'   \item{Latitude}{Latitude in decimal degrees, WGS84.}
+#'   \item{Longitude}{Longitude in decimal degrees, WGS84.}
+#'   \item{Parameter}{Type of data collected.}
+#'   \item{Source}{Name of sampling program.}
+#'   \item{geometry}{Shapefile point coordinates.}
+#' }
+"P_Stations"
+
 #' EDSM Regions
 #'
 #' Region polygons from the Enhanced Delta Smelt Monitoring Program
@@ -330,3 +349,5 @@ NULL
 
 #' @rdname R_EDSM_Subregions
 "R_EDSM_Subregions_19P3"
+
+

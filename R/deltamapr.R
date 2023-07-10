@@ -7,6 +7,7 @@
 #' \item{R}{Regions. Sets of regions, strata, or subregions.}
 #' \item{WW}{Waterways. These are shapefiles of water coverage.}
 #' \item{H}{Habitats. These are shapefiles with information on habitat types or environment.}
+#' \item{P}{Points. These are shapefiles with information on long-term monitoring sampling locations.}
 #' }
 #' @docType package
 #' @name deltamapr
