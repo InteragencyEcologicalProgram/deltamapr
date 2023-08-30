@@ -228,6 +228,23 @@
 #' }
 "P_Stations"
 
+#' P_RKI
+#'
+#' Points showing official river kilometers as used by the CA Department of Water Resources for major bays, sloughs, and rivers in the San Francisco Estuary.
+#'
+#' @rdname P_RKI
+#' @name P_RKI
+#' @format a sf tibble with 2095 rows and 5 columns.
+#' \describe{
+#'   \item{NAME}{Name of Water Body.}
+#'   \item{WaterBodyType}{Type of water body, either River, Canal, Slough, Cut, Island, Bay, Channel, Creek, Lake, Shore, Aqueduct, or Cuttoff.}
+#'   \item{ID}{ID given to each point, a concatenation of the abbreviated water body name and river kilometer.}
+#'   \item{RKI}{River Kilometer, as measured from mouth of the water body.}
+#'   \item{geometry}{Shapefile point coordinates.}
+#' }
+"P_Stations"
+
+
 #' EDSM Regions
 #'
 #' Region polygons from the Enhanced Delta Smelt Monitoring Program

@@ -347,7 +347,7 @@ ggplot(H_CARI_streams) +
   theme_bw()
 ```
 
-# Stations
+# Point data
 
 ## Stations from IEP's long term monitoring surveys
 
@@ -364,4 +364,44 @@ ggplot() +
   geom_sf(data = P_Stations, aes(color = Source))+
   theme_bw()+
   theme(legend.position = "bottom")
+```
+
+
+## River Kilometer indexes
+
+This shows the official river kilometer positions for the major rivers, bays, and sloughs of the San Francisco Estuary and the Delta.
+
+### RKI
+
+```{r RKI, fig.height=12}
+
+P_RKI_test = filter(P_RKI, RKI/5 == round(RKI/5))
+
+ggplot()+
+  geom_sf(data = WW_Delta)+
+  geom_sf_text(data = P_RKI_test, 
+               aes(color = NAME, label = RKI))+
+  scale_color_discrete(guide = FALSE)+
+  theme_bw() + xlab(NULL)+ ylab(NULL)
+
+```
+
+
+## X2 Locations
+
+This shows the official river kilometer positions used for the X2 index (distance from the Golden Gate).
+
+### X2
+
+```{r X2, fig.height=12}
+
+P_X2_test = filter(P_X2, RKI/5 == round(RKI/5))
+
+ggplot()+
+  geom_sf(data = WW_Delta)+
+  geom_sf_text(data = P_X2_test, 
+               aes( label = RKI))+
+  scale_color_discrete(guide = FALSE)+
+  theme_bw() + xlab(NULL)+ ylab(NULL)
+
 ```
