@@ -242,8 +242,22 @@
 #'   \item{RKI}{River Kilometer, as measured from mouth of the water body.}
 #'   \item{geometry}{Shapefile point coordinates.}
 #' }
-"P_Stations"
+"P_RKI"
 
+#' P_X2
+#'
+#' Points showing official river kilometers as used by the CA Department of Water Resources to describe X2 - the distance from the Golden Gate where the bottom salinity is 2 PSU. This data is a subset of the P_RKI dataset, filtered to only include the Sacramenot River RKI values, which are used for X2.
+#'
+#' @rdname P_X2
+#' @name P_X2
+#' @format a sf tibble with 2095 rows and 5 columns.
+#' \describe{
+#'   \item{NAME}{Name of Water Body - Sacramento River.}
+#'   \item{WaterBodyType}{X2}
+#'   \item{RKI}{River Kilometer, as measured from the Golden Gate.}
+#'   \item{geometry}{Shapefile point coordinates.}
+#' }
+"P_X2"
 
 #' EDSM Regions
 #'
