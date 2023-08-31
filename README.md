@@ -15,9 +15,11 @@ deltamapr
 - [Habitat](#habitat)
   - [California aquatic resources
     inventory](#california-aquatic-resources-inventory)
-- [Stations](#stations)
+- [Point data](#point-data)
   - [Stations from IEP’s long term monitoring
     surveys](#stations-from-ieps-long-term-monitoring-surveys)
+  - [River Kilometer indexes](#river-kilometer-indexes)
+  - [X2 Locations](#x2-locations)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
@@ -475,7 +477,7 @@ ggplot(H_CARI_streams) +
 
 <img src="man/figures/README-HCARIstreams-1.png" width="100%" />
 
-# Stations
+# Point data
 
 ## Stations from IEP’s long term monitoring surveys
 
@@ -498,3 +500,483 @@ ggplot() +
 ```
 
 <img src="man/figures/README-Stations-1.png" width="100%" />
+
+## River Kilometer indexes
+
+This shows the official river kilometer positions for the major rivers,
+bays, and sloughs of the San Francisco Estuary and the Delta.
+
+### RKI
+
+``` r
+P_RKI_test = subset(P_RKI, RKI/10 == round(RKI/10))
+
+ggplot()+
+  geom_sf(data = WW_Delta)+
+  geom_sf_text(data = P_RKI_test, 
+               aes(color = NAME, label = RKI))+
+  scale_color_discrete(guide = FALSE)+
+  theme_bw() + xlab(NULL)+ ylab(NULL)
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+#> Warning: The `guide` argument in `scale_*()` cannot be `FALSE`. This was deprecated in
+#> ggplot2 3.3.4.
+#> ℹ Please use "none" instead.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+#> generated.
+```
+
+<img src="man/figures/README-RKI-1.png" width="100%" />
+
+## X2 Locations
+
+This shows the official river kilometer positions used for the X2 index
+(distance from the Golden Gate).
+
+### X2
+
+``` r
+
+P_X2_test = subset(P_X2, RKI/10 == round(RKI/10))
+
+ggplot()+
+  geom_sf(data = WW_Delta)+
+  geom_sf_text(data = P_X2_test, 
+               aes( label = RKI))+
+  scale_color_discrete(guide = FALSE)+
+  theme_bw() + xlab(NULL)+ ylab(NULL)
+#> Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+#> give correct results for longitude/latitude data
+```
+
+<img src="man/figures/README-X2-1.png" width="100%" />

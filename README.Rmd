@@ -374,8 +374,7 @@ This shows the official river kilometer positions for the major rivers, bays, an
 ### RKI
 
 ```{r RKI, fig.height=12}
-
-P_RKI_test = filter(P_RKI, RKI/5 == round(RKI/5))
+P_RKI_test = subset(P_RKI, RKI/10 == round(RKI/10))
 
 ggplot()+
   geom_sf(data = WW_Delta)+
@@ -395,7 +394,7 @@ This shows the official river kilometer positions used for the X2 index (distanc
 
 ```{r X2, fig.height=12}
 
-P_X2_test = filter(P_X2, RKI/5 == round(RKI/5))
+P_X2_test = subset(P_X2, RKI/10 == round(RKI/10))
 
 ggplot()+
   geom_sf(data = WW_Delta)+
