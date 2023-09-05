@@ -228,6 +228,37 @@
 #' }
 "P_Stations"
 
+#' P_RKI
+#'
+#' Points showing official river kilometers as used by the CA Department of Water Resources for major bays, sloughs, and rivers in the San Francisco Estuary.
+#'
+#' @rdname P_RKI
+#' @name P_RKI
+#' @format a sf tibble with 2095 rows and 5 columns.
+#' \describe{
+#'   \item{NAME}{Name of Water Body.}
+#'   \item{WaterBodyType}{Type of water body, either River, Canal, Slough, Cut, Island, Bay, Channel, Creek, Lake, Shore, Aqueduct, or Cuttoff.}
+#'   \item{ID}{ID given to each point, a concatenation of the abbreviated water body name and river kilometer.}
+#'   \item{RKI}{River Kilometer, as measured from mouth of the water body.}
+#'   \item{geometry}{Shapefile point coordinates.}
+#' }
+"P_RKI"
+
+#' P_X2
+#'
+#' Points showing official river kilometers as used by the CA Department of Water Resources to describe X2 - the distance from the Golden Gate where the bottom salinity is 2 PSU. This data is a subset of the P_RKI dataset, filtered to only include the Sacramenot River RKI values, which are used for X2.
+#'
+#' @rdname P_X2
+#' @name P_X2
+#' @format a sf tibble with 2095 rows and 5 columns.
+#' \describe{
+#'   \item{NAME}{Name of Water Body - Sacramento River.}
+#'   \item{WaterBodyType}{X2}
+#'   \item{RKI}{River Kilometer, as measured from the Golden Gate.}
+#'   \item{geometry}{Shapefile point coordinates.}
+#' }
+"P_X2"
+
 #' EDSM Regions
 #'
 #' Region polygons from the Enhanced Delta Smelt Monitoring Program
