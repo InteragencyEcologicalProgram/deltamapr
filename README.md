@@ -57,7 +57,7 @@ with:
 ``` r
 require(sf) # To ensure `sf` objects print correctly
 #> Loading required package: sf
-#> Linking to GEOS 3.11.1, GDAL 3.6.2, PROJ 9.1.1; sf_use_s2() is TRUE
+#> Linking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE
 deltamapr::WW_Delta
 #> Simple feature collection with 282 features and 9 fields
 #> Geometry type: POLYGON
@@ -126,6 +126,7 @@ Four spatial data types are included in this package
 
 ``` r
 require(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 4.3.2
 require(sf)
 ```
 
@@ -400,6 +401,14 @@ ggplot(R_EDSM_Subregions_19P3)+
 <img src="man/figures/README-REDSMSubregions19P3-1.png" width="100%" />
 
 ### Brian Mahardja’s edited EDSM subregions
+
+This version was created in 2019 by taking most complete EDSM subregions
+and adding 3 regions downstream: San Pablo Bay, San Francisco Bay, and
+South Bay. Note that the delineations of these new 3 bay regions were
+drawn somewhat arbitrarily. This version also included minor fixes of
+the original EDSM subregion. For example, the lower Ship Channel
+subregion originally extended west to include the Yolo Bypass Toe Drain
+and was moved to the east to include only the ship channel.
 
 ``` r
 ggplot(R_EDSM_Subregions_Mahardja)+

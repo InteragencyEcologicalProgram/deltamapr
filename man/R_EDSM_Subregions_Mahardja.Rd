@@ -22,6 +22,9 @@ EDSM regions modified by Brian Mahardja (USFWS)
 \section{Credit}{
 
 This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
+This version was created in 2019 by taking most complete EDSM subregions and adding 3 regions downstream: San Pablo Bay, San Francisco Bay, and South Bay.
+Note that the delineations of these new 3 bay regions were drawn somewhat arbitrarily. This version also included minor fixes of the original EDSM subregion.
+For example, the lower Ship Channel subregion originally extended west to include the Yolo Bypass Toe Drain and was moved to the east to include only the ship channel.
 }
 
 \seealso{

@@ -121,6 +121,9 @@
 #' @seealso \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja_FLOAT}}
 #' @section Credit:
 #' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program and modified by Brian Mahardja.
+#' This version was created in 2019 by taking most complete EDSM subregions and adding 3 regions downstream: San Pablo Bay, San Francisco Bay, and South Bay.
+#' Note that the delineations of these new 3 bay regions were drawn somewhat arbitrarily. This version also included minor fixes of the original EDSM subregion.
+#' For example, the lower Ship Channel subregion originally extended west to include the Yolo Bypass Toe Drain and was moved to the east to include only the ship channel.
 "R_EDSM_Subregions_Mahardja"
 
 #' Bay-Delta regions
@@ -138,6 +141,7 @@
 #' @seealso \code{\link{R_EDSM_Subregions}}, \code{\link{R_EDSM_Regions}}, \code{\link{R_EDSM_Strata}}, \code{\link{R_EDSM_Subregions_Mahardja}}
 #' @section Credit:
 #' This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program, modified by Brian Mahardja, then modified by Sam Bashevkin.
+#' This version was created for use by the IEP FLOAT/Drought MAST analyses in 2021. Starting with \code{\link{R_EDSM_Subregions_Mahardja}}, the "Georgiana Slough" and "Sacramento River near Ryde" SubRegions were merged, retaining the "Sacramento River near Ryde" name.
 "R_EDSM_Subregions_Mahardja_FLOAT"
 
 #' California Aquatic Resources Inventory wetlands

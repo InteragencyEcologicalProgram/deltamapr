@@ -23,6 +23,7 @@ This version was built for the IEP FLOAT/Drought MAST analyses in 2021
 \section{Credit}{
 
 This shapefile was created by the United States Fish and Wildlife Service for the Enhanced Delta Smelt Monitoring Program, modified by Brian Mahardja, then modified by Sam Bashevkin.
+This version was created for use by the IEP FLOAT/Drought MAST analyses in 2021. Starting with \code{\link{R_EDSM_Subregions_Mahardja}}, the "Georgiana Slough" and "Sacramento River near Ryde" SubRegions were merged, retaining the "Sacramento River near Ryde" name.
 }
 
 \seealso{
