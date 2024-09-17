@@ -1,7 +1,7 @@
 #code to prepare canal data goes here - WW_Canals
 
-library(tidyverse)
-library(sf)
+require(tidyverse)
+require(sf)
 
 loccanals = st_read("data-raw/WW_Canals/Canals_local.shp")
 fedcanals = st_read("data-raw/WW_Canals/i12_Canals_and_Aqueducts_Federal.shp")
