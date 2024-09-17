@@ -14,7 +14,7 @@ Authors@R:
            person(given = c("Rosemary"),
            family = "Hartman",
            role = c("aut"),
-           email = "Rosemary.Hartman@water.ca.gov"),)
+           email = "Rosemary.Hartman@water.ca.gov"))
 Description: Data package of useful spatial data for the Bay-Delta.
 License: CC BY 4.0
 Encoding: UTF-8
