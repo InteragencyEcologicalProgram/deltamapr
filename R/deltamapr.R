@@ -9,7 +9,7 @@
 #' \item{H}{Habitats. These are shapefiles with information on habitat types or environment.}
 #' \item{P}{Points. These are shapefiles with information on long-term monitoring sampling locations.}
 #' }
-#' @docType PACKAGE
+#' @docType package
 #' @name deltamapr
 #' @md
 NULL
