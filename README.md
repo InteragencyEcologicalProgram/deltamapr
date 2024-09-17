@@ -170,6 +170,20 @@ ggplot(WW_Watershed)+
 
 <img src="man/figures/README-WWWatershed-1.png" width="100%" />
 
+
+## State, federal, and local canals in California
+
+This shapefile consolidates data from the Department of Water Resources on general locations of all major canals in California.
+
+``` r
+ggplot(WW_Canals)+
+  geom_sf()+
+  theme_bw()
+```
+
+<img src="man/figures/README-WWCanals-1.png" width="100%" />
+
+
 # Regions
 
 Most regions are derived from the united States Fish and Wildlife
