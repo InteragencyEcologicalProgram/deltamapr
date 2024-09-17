@@ -1,3 +1,6 @@
+# deltamapr 1.0.1
+* Added shapefile of major canals in California 
+
 # deltamapr 1.0.0
 * Added a table of major IEP sampling stations
 

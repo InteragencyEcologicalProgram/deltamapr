@@ -38,6 +38,24 @@
 #' This shapefile was produced by the California State Parks Division of Boating and Waterways.
 "WW_DBW"
 
+#' Canals
+#'
+#' Shapefile of canals run by the State Water Project, Bureau of Reclamation, and local water agencies.
+#'
+#' @format a sf tibble with 509 rows and 7 columns.
+#' \describe{
+#'   \item{Name}{Name of canal or aquaduct}
+#'   \item{Operator}{Agency responsible for canal or aquaduct}
+#'   \item{Conv_Type}{Type of conveyance. Either 'pipeline', 'tunnel', 'canal', or 'pool'. Only available for SWP and Reclamation datasets.}
+#'   \item{Conv_Sub}{Name of subdivision of canal (SWP only)}
+#'   \item{Comments}{Comments or additional information provided about the data}
+#'   \item{Shape_Leng}{Shape Length}
+#'   \item{geometry}{Shapefile polygon coordinates.}
+#' }
+#' @section Credit:
+#' This shapefile was produced by the California Department of Water Resources.
+"WW_Canals"
+
 #' Subregions from the Delta Smelt Individual Based Model
 #'
 #' Subregions from the Delta Smelt Individual Based Model

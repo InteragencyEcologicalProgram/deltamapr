@@ -1,6 +1,6 @@
 Package: deltamapr
 Title: Spatial Data for the Bay-Delta
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     c(person(given = c("Samuel", "M"),
            family = "Bashevkin",
@@ -10,19 +10,23 @@ Authors@R:
       person(given = "Arthur",
            family = "Barros",
            role = c("aut"),
-           email = "Arthur.Barros@Wildlife.ca.gov"))
+           email = "Arthur.Barros@Wildlife.ca.gov"),
+           person(given = c("Rosemary"),
+           family = "Hartman",
+           role = c("aut"),
+           email = "Rosemary.Hartman@water.ca.gov"))
 Description: Data package of useful spatial data for the Bay-Delta.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Imports: 
-    sf
 Depends: 
     R (>= 2.10)
 Suggests: 
     ggplot2,
     units,
-    dplyr
+    dplyr,
+    sf
