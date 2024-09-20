@@ -1845,7 +1845,8 @@ Produced by the Department of Water Resources
 ``` r
 ggplot(WW_Canals)+
   geom_sf( aes(color = Operator))+
-  theme_bw()
+  theme_bw()+
+  theme(legend.position = "bottom")
 ```
 
 <img src="man/figures/README-canals-1.png" width="100%" />

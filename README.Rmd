@@ -110,10 +110,11 @@ ggplot(WW_Watershed)+
 
 Produced by the Department of Water Resources
 
-```{r canals}
+```{r canals, fig.dim = c(8,12)}
 ggplot(WW_Canals)+
   geom_sf( aes(color = Operator))+
-  theme_bw()
+  theme_bw()+
+  theme(legend.position = "bottom")
 ```
 
 # Regions
