@@ -106,6 +106,17 @@ ggplot(WW_Watershed)+
   theme_bw()
 ```
 
+## Canals
+
+Produced by the Department of Water Resources
+
+```{r canals, fig.dim = c(8,12)}
+ggplot(WW_Canals)+
+  geom_sf( aes(color = Operator))+
+  theme_bw()+
+  theme(legend.position = "bottom")
+```
+
 # Regions
 
 Most regions are derived from the united States Fish and Wildlife Service [Enhanced Delta Smelt Monitoring Program](https://www.fws.gov/lodi/juvenile_fish_monitoring_program/jfmp_index.htm) (EDSM).
